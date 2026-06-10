@@ -1,0 +1,6 @@
+*.tar
+*.tar.gz
+week13/restic-repo/
+week09/*.img
+week09/rand.*
+week09/seq.*

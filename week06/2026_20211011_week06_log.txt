@@ -1,0 +1,19 @@
+Script started on 2026-04-10 11:11:47+09:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="81" LINES="41"]
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week06[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week06[00m$ cd[K[Ksu f[Kstudnent1
+[?2004lsu: user studnent1 does not exist or the user entry does not contain all the required fields
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week06[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week06[00m$ su student1
+[?2004lPassword: 
+[?2004h]0;student1@DESKTOP-GG23J57: /home/asd/linux/week06[01;32mstudent1@DESKTOP-GG23J57[00m:[01;34m/home/asd/linux/week06[00m$ exit
+[?2004lexit
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week06[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week06[00m$ exit
+[?2004lexit
+
+Script done on 2026-04-10 11:12:36+09:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-04-10 11:12:47+09:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="81" LINES="41"]
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week06[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week06[00m$ ls
+[?2004l2026_2021011_week06_log.txt   2026__20211011_week06_log.txt
+2026_20211011_week06_log.txt  t.txt
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week06[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week06[00m$ exit
+[?2004lexit
+
+Script done on 2026-04-10 11:13:26+09:00 [COMMAND_EXIT_CODE="0"]

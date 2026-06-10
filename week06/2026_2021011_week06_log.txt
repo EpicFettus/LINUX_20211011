@@ -1,0 +1,146 @@
+Script started on 2026-04-10 10:39:47+09:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="81" LINES="41"]
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week06[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week06[00m$ f[Kclear[K[K[K[K[Kcd /etc/security/
+[?2004l[?2004h]0;asd@DESKTOP-GG23J57: /etc/security[01;32masd@DESKTOP-GG23J57[00m:[01;34m/etc/security[00m$ ls
+[?2004laccess.conf      group.conf   namespace.conf  opasswd         sepermit.conf
+capability.conf  limits.conf  [0m[01;34mnamespace.d[0m     pam_env.conf    time.conf
+faillock.conf    [01;34mlimits.d[0m     [01;32mnamespace.init[0m  pwhistory.conf
+[?2004h]0;asd@DESKTOP-GG23J57: /etc/security[01;32masd@DESKTOP-GG23J57[00m:[01;34m/etc/security[00m$ sudo nano limits.conf
+[?2004l[sudo] password for asd: 
+[?2004h[?1049h[22;0;0t[1;41r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[39;34H(B[0;7m[ Reading... ](B[m[39;33H(B[0;7m[ Read 67 lines ](B[m[H(B[0;7m  GNU nano 7.2                       limits.conf                                 [1;80H(B[m[40d(B[0;7m^G(B[m Help[14G(B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut[53G(B[0;7m^T(B[m Execute   (B[0;7m^C(B[m Location[41d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste     (B[0;7m^J(B[m Justify   (B[0;7m^/(B[m Go To Line[2d[36m# /etc/security/limits.conf[3d#[4d#This file sets the resource limits for the users logged in via PAM.[5d#It does not affect resource limits of the system services.[6d#[7d#Also note that configuration files in /etc/security/limits.d directory,[8d#which are read in alphabetical order, override the settings in this[9d#file in case the domain is the same or more specific.[10d#That means, for example, that setting a limit for wildcard domain here[11d#can be overridden with a wildcard setting in a config file in the[12d#subdirectory, but a user specific setting here can be overridden only[13d#with a user specific setting in the subdirectory.[14d#[15d#Each line describes a limit for a user in the form:[16d#[17d#<domain>        <type>  <item>  <value>[18d#[19d#Where:[20d#<domain> can be:[21d#        - a user name[22d#        - a group name, with @group syntax[23d#        - the wildcard *, for default entry[24d#        - the wildcard %, can be also used with %group syntax,[25d#[17X[25;19Hfor maxlogin limit[26d#        - NOTE: group and wildcard limits are not applied to root.[27d#          To apply a limit to the root user, <domain> must be[28d#          the literal username root.[29d#[30d#<type> can have the two values:[31d#        - "soft" for enforcing the soft limits[32d#        - "hard" for enforcing hard limits[33d#[34d#<item> can be one of the following:[35d#        - core - limits the core file size (KB)[36d#        - data - max data size (KB)[37d#        - fsize - maximum filesize (KB)[38d#        - memlock - max locked-in-memory address space (KB)[2d[39m(B[m[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[5d[?25l[?12l[?25h[6d[?25l[?12l[?25h[7d[?25l[?12l[?25h[8d[?25l[?12l[?25h[9d[?25l[?12l[?25h[10d[?25l[?12l[?25h[11d[?25l[?12l[?25h[12d[?25l[?12l[?25h[13d[?25l[?12l[?25h[14d[?25l[?12l[?25h[15d[?25l[?12l[?25h[16d[?25l[?12l[?25h[17d[?25l[?12l[?25h[18d[?25l[?12l[?25h[19d[?25l[?12l[?25h[20d[?25l[?12l[?25h[21d[?25l[39d[K[?12l[?25h[22d[?25l[?12l[?25h[23d[?25l[?12l[?25h[24d[?25l[?12l[?25h[25d[?25l[?12l[?25h[26d[?25l[?12l[?25h[27d[?25l[?12l[?25h[28d[?25l[?12l[?25h[29d[?25l[?12l[?25h[30d[?25l[?12l[?25h[31d[?25l[?12l[?25h[32d[?25l[?12l[?25h[33d[?25l[?12l[?25h[34d[?25l[?12l[?25h[35d[?25l[?12l[?25h[36d[?25l[?12l[?25h[37d[?25l[?12l[?25h[38d[?25l[?12l[?25h7[2;39r8[39d
+[1;41r[38;1H[36m#        - nofile - max number of open file descriptors[39m(B[m[?25l[?12l[?25h7[2;39r8[39d
+[1;41r[38;1H[36m#        - rss - max resident set size (KB)[39m(B[m[?25l[?12l[?25h7[2;39r8[39d
+[1;41r[38;1H[36m#        - stack - max stack size (KB)[39m(B[m[?25l[?12l[?25h7[2;39r8[39d
+[1;41r[38;1H[36m#        - cpu - max CPU time (MIN)[39m(B[m[?25l[?12l[?25h7[2;39r8[39d
+[1;41r[38;1H[36m#        - nproc - max number of processes[39m(B[m[?25l[?12l[?25h7[2;39r8[39d
+[1;41r[38;1H[36m#        - as - address space limit (KB)[39m(B[m[?25l[?12l[?25h7[2;39r8[39d
+[1;41r[38;1H[36m#        - maxlogins - max number of logins for this user[39m(B[m[?25l[?12l[?25h7[2;39r8[39d
+[1;41r[38;1H[36m#        - maxsyslogins - max number of logins on the system[39m(B[m[?25l[?12l[?25h7[2;39r8[39d
+[1;41r[38;1H[36m#        - priority - the priority to run user process with[39m(B[m[?25l[?12l[?25h7[2;39r8[39d
+[1;41r[38;1H[36m#        - locks - max number of file locks the user can hold[39m(B[m[?25l[?12l[?25h7[2;39r8[39d
+[1;41r[38;1H[36m#        - sigpending - max number of pending signals[39m(B[m[?25l[?12l[?25h7[2;39r8[39d
+[1;41r[38;1H[36m#        - msgqueue - max memory used by POSIX message queues (bytes)[39m(B[m[?25l[?12l[?25h7[2;39r8[39d
+[1;41r[38;1H[36m#        - nice - max nice priority allowed to raise to values: [-20, 19][39m(B[m[?25l[?12l[?25h7[2;39r8[39d
+[1;41r[38;1H[36m#        - rtprio - max realtime priority[39m(B[m[?25l[?12l[?25h7[2;39r8[39d
+[1;41r[38;1H[36m#        - chroot - change root to directory (Debian-specific)[39m(B[m[?25l[?12l[?25h7[2;39r8[39d
+[1;41r[38;1H[36m#[39m(B[m[?25l[?12l[?25h7[2;39r8[39d
+[1;41r[38;1H[36m#<domain>      <type>  <item>         <value>[39m(B[m[?25l[?12l[?25h7[2;39r8[39d
+[1;41r[38;1H[36m#[39m(B[m[?25l[?12l[?25h7[2;39r8[39d
+[1;41r[38;1H[?25l[?12l[?25h7[2;39r8[39d
+[1;41r[38;1H[36m#*[15X[38;18Hsoft    core            0[39m(B[m[?25l[?12l[?25h7[2;39r8[39d
+[1;41r[38;1H[36m#root            hard    core            100000[39m(B[m[?25l[?12l[?25h7[2;39r8[39d
+[1;41r[38;1H[36m#*[15X[38;18Hhard    rss             10000[39m(B[m[?25l[?12l[?25h7[2;39r8[39d
+[1;41r[38;1H[36m#@student        hard    nproc           20[39m(B[m[?25l[?12l[?25h7[2;39r8[39d
+[1;41r[38;1H[36m#@faculty        soft    nproc           20[39m(B[m[?25l[?12l[?25h7[2;39r8[39d
+[1;41r[38;1H[36m#@faculty        hard    nproc           50[39m(B[m[?25l[?12l[?25h7[2;39r8[39d
+[1;41r[38;1H[36m#ftp             hard    nproc           0[39m(B[m[?25l[?12l[?25h7[2;39r8[39d
+[1;41r[38;1H[36m#ftp             -       chroot          /ftp[39m(B[m[?25l[?12l[?25h7[2;39r8[39d
+[1;41r[38;1H[36m#@student        -       maxlogins       4[39m(B[m[?25l[?12l[?25h7[2;39r8[39d
+[1;41r[38;1H[?25l[?12l[?25h7[2;39r8[39d
+[1;41r[38;1H[36m# End of file[39m(B[m[?25l[?12l[?25h7[2;39r8[39d
+[1;41r[38;1H[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[6d[?25l[?12l[?25h[7d[?25l[?12l[?25h[8d[?25l[?12l[?25h[9d[?25l[?12l[?25h[10d[?25l[?12l[?25h[11d[?25l[?12l[?25h[12d[?25l[?12l[?25h[13d[?25l[?12l[?25h[14d[?25l[?12l[?25h[15d[?25l[?12l[?25h[16d[?25l[?12l[?25h[17d[?25l[?12l[?25h[18d[?25l[?12l[?25h[19d[?25l[?12l[?25h[20d[?25l[?12l[?25h[21d[?25l[?12l[?25h[22d[?25l[?12l[?25h[23d[?25l[?12l[?25h[24d[?25l[?12l[?25h[25d[?25l[?12l[?25h[26d[?25l[?12l[?25h[27d[?25l[?12l[?25h[28d[?25l[?12l[?25h[29d[?25l[?12l[?25h[30d[?25l[?12l[?25h[31d[?25l[?12l[?25h[32d[?25l[?12l[?25h[33d[?25l[?12l[?25h[34d[?25l[?12l[?25h[35d[?25l[?12l[?25h[36d[?25l[?12l[?25h[37d[?25l[?12l[?25h[38d[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[29d[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[A[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[29d[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[A[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[29d[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[30d[?25l[?12l[?25h[?25l[?12l[?25h[31d[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[32d[?25l[?12l[?25h[?25l[?12l[?25h[33d[?25l[?12l[?25h[?25l[?12l[?25h[34d[?25l[?12l[?25h[?25l[?12l[?25h[35d[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[36d[?25l[?12l[?25h[35;43H[?25l[?12l[?25h[36d[?25l[?12l[?25h[35;43H[?25l[?12l[?25h[36d[?25l[?12l[?25h[35;43H[?25l[?12l[?25h[36d[?25l[?12l[?25h[35;43H[?25l[?12l[?25h[36d[?25l[?12l[?25h[37;14H[?25l[?12l[?25h[38d[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[37;14H[?25l[?12l[?25h[A[?25l[?12l[?25h[37;14H[?25l[?12l[?25h[38d[?25l[?12l[?25h[?25l[?12l[?25h[?25l[1;50H(B[0;7m*[80G(B[m[2;39r[39;1H
+[1;41r[38;1H[?12l[?25h[?25l[?12l[?25hs[?25l[?12l[?25hu[?25l[?12l[?25h [?25l[?12l[?25ht[?25l[?12l[?25hu[?25l[?12l[?25hd[?25l[?12l[?25he[?25l[?12l[?25hn[?25l[?12l[?25ht[?25l[?12l[?25h1[?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25ht[?25l[?12l[?25h [?25l[?12l[?25h1[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h1[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25hs[?25l[?12l[?25ho[?25l[?12l[?25hf[?25l[?12l[?25ht[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25hn[?25l[?12l[?25hp[?25l[?12l[?25hr[?25l[?12l[?25ho[?25l[?12l[?25hc[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h1[?25l[?12l[?25h0[?25l7[2;39r8[39d
+[1;41r[38;1H[?12l[?25h[?25l[?12l[?25hs[?25l[?12l[?25ht[?25l[?12l[?25hu[?25l[?12l[?25hd[?25l[?12l[?25hn[?25l[?12l[?25he[?25l[?12l[?25ht[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[?12l[?25hs[?25l[?12l[?25ht[?25l[?12l[?25hu[?25l[?12l[?25hd[?25l[?12l[?25he[?25l[?12l[?25hn[?25l[?12l[?25ht[?25l[?12l[?25h2[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25hh[?25l[?12l[?25ha[?25l[?12l[?25hr[?25l[?12l[?25hd[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25hn[?25l[?12l[?25hp[?25l[?12l[?25hr[?25l[?12l[?25ho[?25l[?12l[?25hc[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h1[?25l[?12l[?25h5[?25l7[2;39r8[39d
+[1;41r[38;1H[?12l[?25h[?25l[?12l[?25hs[?25l[?12l[?25ht[?25l[?12l[?25hu[?25l[?12l[?25hd[?25l[?12l[?25he[?25l[?12l[?25hn[?25l[?12l[?25ht[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[37;29H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25hn[?25l[?12l[?25ht[?25l[?12l[?25h1[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25hh[?25l[?12l[?25ha[?25l[?12l[?25hr[?25l[?12l[?25hd[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25hn[?25l[?12l[?25hp[?25l[?12l[?25hr[?25l[?12l[?25ho[?25l[?12l[?25hc[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h1[?25l[?12l[?25h5[?25l[38d[?12l[?25h[?25l[?12l[?25hs[?25l[?12l[?25ht[?25l[?12l[?25hu[?25l[?12l[?25hd[?25l[?12l[?25he[?25l[?12l[?25hn[?25l[?12l[?25ht[?25l[?12l[?25h1[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25hs[?25l[?12l[?25ho[?25l[?12l[?25hf[?25l[?12l[?25ht[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25hn[?25l[?12l[?25ho[?25l[?12l[?25hf[?25l[?12l[?25hi[?25l[?12l[?25hl[?25l[?12l[?25he[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h2[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h2[?25l[?12l[?25h0[?25l7[2;39r8[39d
+[1;41r[38;1H[?12l[?25h[?25l[?12l[?25hs[?25l[?12l[?25ht[?25l[?12l[?25hu[?25l[?12l[?25he[?25l[?12l[?25hn[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25hd[?25l[?12l[?25he[?25l[?12l[?25hn[?25l[?12l[?25ht[?25l[?12l[?25h1[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25hh[?25l[?12l[?25ha[?25l[?12l[?25hr[?25l[?12l[?25hd[?25l[?12l[?25h [?25l[?12l[?25hn[?25l[?12l[?25ho[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25hn[?25l[?12l[?25ho[?25l[?12l[?25hf[?25l[?12l[?25hi[?25l[?12l[?25hl[?25l[?12l[?25he[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h3[?25l[?12l[?25h0[?25l[39;34H(B[0;7m[ Writing... ](B[m[1;50H(B[0;7m [80G(B[m[39;32H(B[0;7m[ Wrote 72 lines ](B[m[?12l[?25h[38;30H[?25l[39d[J[41d[?12l[?25h[41;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;asd@DESKTOP-GG23J57: /etc/security[01;32masd@DESKTOP-GG23J57[00m:[01;34m/etc/security[00m$ Yod[K[K[KHal[Krphs[Kas[K[K[K[K[K[K[Kulifi[K[Kmit a[Kf[Kf[Kf[K[Kf[K -u
+[?2004l63301
+[?2004h]0;asd@DESKTOP-GG23J57: /etc/security[01;32masd@DESKTOP-GG23J57[00m:[01;34m/etc/security[00m$ exit
+[?2004lexit
+
+Script done on 2026-04-10 10:46:51+09:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-04-10 10:47:40+09:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="81" LINES="41"]
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week06[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week06[00m$ f[Ksudo nano[K[K[K[K[K[K[K[K[Ksu student1
+[?2004lPassword: 
+[?2004h]0;student1@DESKTOP-GG23J57: /home/asd/linux/week06[01;32mstudent1@DESKTOP-GG23J57[00m:[01;34m/home/asd/linux/week06[00m$ exit[K[K[K[Ksudo ch[K[K[K[K[K[K[Kru[K[Ksu asd
+[?2004lPassword: 
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week06[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week06[00m$ sudo chage -d -1 student1
+[?2004l[sudo] password for asd: 
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week06[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week06[00m$ sudo chage -M 99999 su[Ktudnet[K[K[K[Kdent1
+[?2004l[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week06[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week06[00m$ su student1
+[?2004lPassword: 
+[?2004h]0;student1@DESKTOP-GG23J57: /home/asd/linux/week06[01;32mstudent1@DESKTOP-GG23J57[00m:[01;34m/home/asd/linux/week06[00m$ week06[K[K[K[K[K[Kholy shit[K[K[K[K[K[K[K[K[Kwhat the hell o m[K[Kh my god no wayyy yyyy[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kd[Kps[K[Kps[K[Kps -u studnet1[K[K[K[K[K[K[K[K[K[K[K[K[K[Kps -u student1 --[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kps -u student1 --no0header[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kps -u student --no-header }[K| wc-k k[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cl [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kl
+[?2004lerror: user name does not exist
+
+Usage:
+ ps [options]
+
+ Try 'ps --help <simple|list|output|threads|misc|all>'
+  or 'ps --help <s|l|o|t|m|a>'
+ for additional help text.
+
+For more details see ps(1).
+wc-l: command not found
+[?2004h]0;student1@DESKTOP-GG23J57: /home/asd/linux/week06[01;32mstudent1@DESKTOP-GG23J57[00m:[01;34m/home/asd/linux/week06[00m$ ps -u student --no-header | wc-l [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C1 --no-header | wc-l[A]0;student1@DESKTOP-GG23J57: /home/asd/linux/week06[01;32mstudent1@DESKTOP-GG23J57[00m:[01;34m/home/asd/linux/week06[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+[?2004lwc-l: command not found
+[?2004h]0;student1@DESKTOP-GG23J57: /home/asd/linux/week06[01;32mstudent1@DESKTOP-GG23J57[00m:[01;34m/home/asd/linux/week06[00m$ ps -u student1 --no-header | wc-l[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -l
+[?2004l6
+[?2004h]0;student1@DESKTOP-GG23J57: /home/asd/linux/week06[01;32mstudent1@DESKTOP-GG23J57[00m:[01;34m/home/asd/linux/week06[00m$ jobs
+[?2004l[?2004h]0;student1@DESKTOP-GG23J57: /home/asd/linux/week06[01;32mstudent1@DESKTOP-GG23J57[00m:[01;34m/home/asd/linux/week06[00m$ f[Kkill [K[K[K[K[K[7mkill $(ps -u student1 | grep sle[27m[7me[27m[7mp | awk '{print $1}') 2>/dev/null[27m[A]0;student1@DESKTOP-GG23J57: /home/asd/linux/week06[01;32mstudent1@DESKTOP-GG23J57[00m:[01;34m/home/asd/linux/week06[00m$ kill $(ps -u student1 | grep sleep | awk '{print $1}') 2>/dev/null
+[?2004l[?2004h]0;student1@DESKTOP-GG23J57: /home/asd/linux/week06[01;32mstudent1@DESKTOP-GG23J57[00m:[01;34m/home/asd/linux/week06[00m$ [7m# 백그라운드 ps 30개 이상[27m
+[7mfor i in $(seq 1 35); do[27m
+[7m sleep 300 &[27m
+[7m echo "생성 $i : PID=$!"[27m
+[7mdone[27m[A[A[A[A]0;student1@DESKTOP-GG23J57: /home/asd/linux/week06[01;32mstudent1@DESKTOP-GG23J57[00m:[01;34m/home/asd/linux/week06[00m$ # 백그라운드 ps 30개 이상
+for i in $(seq 1 35); do
+ sleep 300 &
+ echo "생성 $i : PID=$!"
+done
+[?2004l[1] 9863
+생성 1 : PID=9863
+[2] 9864
+생성 2 : PID=9864
+[3] 9865
+생성 3 : PID=9865
+[4] 9866
+생성 4 : PID=9866
+[5] 9867
+생성 5 : PID=9867
+bash: fork: retry: Resource temporarily unavailable
+bash: fork: retry: Resource temporarily unavailable
+bash: fork: retry: Resource temporarily unavailable
+bash: fork: retry: Resource temporarily unavailable
+bash: fork: Resource temporarily unavailable
+[?2004h]0;student1@DESKTOP-GG23J57: /home/asd/linux/week06[01;32mstudent1@DESKTOP-GG23J57[00m:[01;34m/home/asd/linux/week06[00m$ ps for i in $(seq 1 35); do  sleep 300 &  echo "생성 $i : PID=$!"; done[A]0;student1@DESKTOP-GG23J57: /home/asd/linux/week06[01;32mstudent1@DESKTOP-GG23J57[00m:[01;34m/home/asd/linux/week06[00m$ [7P# 백그라운드 ps 30개 이상
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ckill $(ps -u student1 | grep sleep | awk '{print $1}') 2>/dev/null[A]0;student1@DESKTOP-GG23J57: /home/asd/linux/week06[01;32mstudent1@DESKTOP-GG23J57[00m:[01;34m/home/asd/linux/week06[00m$ jobs[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cps -u student1 --no-header | wc -l
+[?2004lbash: fork: retry: Resource temporarily unavailable
+bash: fork: retry: Resource temporarily unavailable
+bash: fork: retry: Resource temporarily unavailable
+bash: fork: retry: Resource temporarily unavailable
+^Cbash: fork: Interrupted system call
+
+[?2004h]0;student1@DESKTOP-GG23J57: /home/asd/linux/week06[01;32mstudent1@DESKTOP-GG23J57[00m:[01;34m/home/asd/linux/week06[00m$ jop[Kbs
+[?2004l[1]   Running                 sleep 300 &
+[2]   Running                 sleep 300 &
+[3]   Running                 sleep 300 &
+[4]-  Running                 sleep 300 &
+[5]+  Running                 sleep 300 &
+^[[B^[[B^[[B^[[B                
+q ^C
+
+
+
+
+
+
+
+q 
+q
+^C
+exti    exit
+[1]   Done                    sleep 300
+[3]   Done                    sleep 300
+[4]-  Done                    sleep 300
+[5]+  Done                    sleep 300
+
+[?2004h]0;student1@DESKTOP-GG23J57: /home/asd/linux/week06[01;32mstudent1@DESKTOP-GG23J57[00m:[01;34m/home/asd/linux/week06[00m$ 
+[?2004l[?2004h]0;student1@DESKTOP-GG23J57: /home/asd/linux/week06[01;32mstudent1@DESKTOP-GG23J57[00m:[01;34m/home/asd/linux/week06[00m$ exit
+[?2004lexit
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week06[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week06[00m$ 
+Session terminated, killing shell...
+Session terminated, killing shell...[?2004l[?2004h[?2004l
+ ...killed.
+Terminated
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week06[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week06[00m$  ...killed.

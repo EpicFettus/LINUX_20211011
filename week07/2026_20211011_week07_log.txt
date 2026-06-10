@@ -1,0 +1,686 @@
+Script started on 2026-04-17 09:27:17+09:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="120" LINES="30"]
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7[00m$ ls
+[?2004l2026_20211011_week07_log.txt  t.txt
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7[00m$ exit[K[K[K[KZoke[K[K[K[KZeka[K[Kca[K[Kka[K[K[K[KShowMaker[K[K[K[K[K[K[K[K[KChovy[K[K[K[K[KUcal[K[K[K[Kdocker ps
+[?2004lCONTAINER ID   IMAGE               COMMAND                  CREATED       STATUS          PORTS                                     NAMES
+c927b56ef14b   nginx:1.25-alpine   "/docker-entrypoint.…"   3 weeks ago   Up 31 minutes   0.0.0.0:8080->80/tcp, [::]:8080->80/tcp   my-web-proxy
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7[00m$ docker images
+[?2004l                                                                                                    [1m[106m[30mi[0m[0m [96mInfo → [0m[0m [38;5;0m[48;5;14m U [0m In Use
+[39m[1mIMAGE[0m                [39m[1mID[0m             [39m[1mDISK USAGE[0m   [39m[1mCONTENT SIZE[0m   [39m[1mEXTRA[0m
+[34m[1mhello-world:latest[0m   [39m85404b3c5395[0m       [39m25.9kB[0m         [39m9.52kB[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1mnginx:1.25-alpine[0m    [39m516475cc129d[0m       [39m75.4MB[0m         [39m21.7MB[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1mnginx:alpine[0m         [39me7257f1ef28b[0m       [39m93.5MB[0m         [39m26.9MB[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1mnginx:latest[0m         [39mbc45d248c4e1[0m        [39m240MB[0m         [39m65.8MB[0m   [38;5;0m[48;5;14m U [0m  
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7[00m$ a[KEkgmgmr[K[K[K[K[K[K[KEkgmr[K[K[K[K[Kdocker start stress-nignx
+[?2004lError response from daemon: No such container: stress-nignx
+failed to start containers: stress-nignx
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7[00m$ docker start stress-nignx[C[C[C[1Pnx[1Pnxgnxinx[1Px[Kxn[K[Knx
+[?2004lstress-nginx
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7[00m$ docker ps
+[?2004lCONTAINER ID   IMAGE               COMMAND                  CREATED       STATUS          PORTS                                     NAMES
+3296a61b02d2   nginx:alpine        "/docker-entrypoint.…"   2 weeks ago   Up 7 seconds    0.0.0.0:8081->80/tcp, [::]:8081->80/tcp   stress-nginx
+c927b56ef14b   nginx:1.25-alpine   "/docker-entrypoint.…"   4 weeks ago   Up 34 minutes   0.0.0.0:8080->80/tcp, [::]:8080->80/tcp   my-web-proxy
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7[00m$ HolyShit whatthefuck oh [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kls-[K 0al[K[K[K[K[K[Kls -al
+[?2004ltotal 20
+drwxr-xr-x 2 asd asd 4096 Apr 17 09:27 [0m[01;34m.[0m
+drwxr-xr-x 8 asd asd 4096 Apr 17 09:26 [01;34m..[0m
+-rw-r--r-- 1 asd asd 3414 Apr 17 09:33 2026_20211011_week07_log.txt
+-rw-r--r-- 1 asd asd 5134 Apr 17 09:33 t.txt
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7[00m$ co[K[Kdocker ps
+[?2004lCONTAINER ID   IMAGE               COMMAND                  CREATED       STATUS          PORTS                                     NAMES
+3296a61b02d2   nginx:alpine        "/docker-entrypoint.…"   2 weeks ago   Up 2 minutes    0.0.0.0:8081->80/tcp, [::]:8081->80/tcp   stress-nginx
+c927b56ef14b   nginx:1.25-alpine   "/docker-entrypoint.…"   4 weeks ago   Up 36 minutes   0.0.0.0:8080->80/tcp, [::]:8080->80/tcp   my-web-proxy
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7[00m$ KeJin[K[K[K[K[K/Harphas[K[K[K[K[K[K[K[KHar[K[K[KRuler[K[K[K[K[KHarphas[K[K[K[K[K[K[KGremorhy[K[Ky[K[K[K[K[K[K[KGomory[K[K[K[K[K[KYod[K[K[KBowMaster[K[K[K[K[K[K[K[K[KSingung[K[K[K[K[K[K[Kdf -Th
+[?2004lFilesystem     Type     Size  Used Avail Use% Mounted on
+none           overlay  7.8G     0  7.8G   0% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+none           tmpfs    7.8G  4.0K  7.8G   1% /mnt/wsl
+drivers        9p       470G  402G   69G  86% /usr/lib/wsl/drivers
+/dev/sdd       ext4    1007G  3.1G  953G   1% /
+none           tmpfs    7.8G   76K  7.8G   1% /mnt/wslg
+none           overlay  7.8G     0  7.8G   0% /usr/lib/wsl/lib
+rootfs         rootfs   7.8G  2.7M  7.8G   1% /init
+none           tmpfs    7.8G  728K  7.8G   1% /run
+none           tmpfs    7.8G     0  7.8G   0% /run/lock
+none           tmpfs    7.8G     0  7.8G   0% /run/shm
+none           overlay  7.8G   76K  7.8G   1% /mnt/wslg/versions.txt
+none           overlay  7.8G   76K  7.8G   1% /mnt/wslg/doc
+C:\            9p       470G  402G   69G  86% /mnt/c
+D:\            9p       196M  127M   70M  65% /mnt/d
+E:\            9p       6.0G  4.9G  1.2G  82% /mnt/e
+tmpfs          tmpfs    1.6G   20K  1.6G   1% /run/user/1000
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7[00m$ Docker[K[K[K[K[K[Kunity[K[K[K[K[Kngo[K[K[KLindarang[K[K[K[K[K[K[K[K[Krun lock[K[K[K[K[K[K[K[Kngo[K[K[KGodo [K[K[K[K[KH[KComeback[K[K[K[K[K[K[K[KPobl[Kelter[K[K[K[K[K[K[K[KJackeyLove[K[K[K[K[K[K[K[K[K[KCooc[Kkiewarz[Ks[K[K[K[K[K[K[K[K[K[KHologram[K[K[K[K[K[K[K[Kmama woo woo wooooooo[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Klsblk --f
+[?2004lNAME
+    FSTYPE FSVER LABEL UUID                                 FSAVAIL FSUSE% MOUNTPOINTS
+sda ext4   1.0                                                             
+sdb ext4   1.0                                                             
+sdc swap   1           6ee49bba-31fd-4943-ac11-5953b4b44c9b                [SWAP]
+sdd ext4   1.0         92366fc3-da8a-4b09-ad36-c6505f3cee7e  952.6G     0% /var/lib/docker
+                                                                           /mnt/wslg/distro
+                                                                           /
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7[00m$ ngo[K[K[Kb i n g o[K[K[K[K[K[K[K[K[KKejin[K[K[K[K[K하르파[K[K[Ka[Kls -al /dev/sda
+[?2004lbrw-rw---- 1 root disk 8, 0 Apr 17 08:57 [0m[40;33;01m/dev/sda[0m
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7[00m$ ls -al[K[K[K[K[K[Kls -al /e[Kdev
+[?2004ltotal 4
+drwxr-xr-x 15 root root        3860 Apr 17 08:57 [0m[01;34m.[0m
+drwxr-xr-x 27 root root        4096 Apr 17 08:57 [01;34m..[0m
+crw-r--r--  1 root root     10, 235 Apr 17 08:57 [40;33;01mautofs[0m
+drwxr-xr-x  2 root root         600 Apr 17 08:57 [01;34mblock[0m
+drwxr-xr-x  2 root root         120 Apr 17 08:57 [01;34mbsg[0m
+crw-------  1 root root     10, 234 Apr 17 08:57 [40;33;01mbtrfs-control[0m
+drwxr-xr-x  2 root root        2860 Apr 17 08:57 [01;34mchar[0m
+crw-------  1 root root      5,   1 Apr 17 08:57 [40;33;01mconsole[0m
+lrwxrwxrwx  1 root root          11 Apr 17 08:57 [01;36mcore[0m -> /proc/kcore
+crw-------  1 root root     10, 123 Apr 17 08:57 [40;33;01mcpu_dma_latency[0m
+crw-------  1 root root     10, 203 Apr 17 08:57 [40;33;01mcuse[0m
+drwxr-xr-x  6 root root         120 Apr 17 08:57 [01;34mdisk[0m
+crw-rw-rw-  1 root root     10, 125 Apr 17 08:57 [40;33;01mdxg[0m
+lrwxrwxrwx  1 root root          13 Apr 17 08:57 [01;36mfd[0m -> [01;34m/proc/self/fd[0m
+crw-rw-rw-  1 root root      1,   7 Apr 17 08:57 [40;33;01mfull[0m
+crw-rw-rw-  1 root root     10, 229 Apr 17 08:57 [40;33;01mfuse[0m
+crw-------  1 root root     10, 228 Apr 17 08:57 [40;33;01mhpet[0m
+drwxr-xr-x  2 root root           0 Apr 17 08:57 [01;34mhugepages[0m
+crw-------  1 root root    229,   0 Apr 17 08:57 [40;33;01mhvc0[0m
+crw-------  1 root root    229,   1 Apr 17 08:57 [40;33;01mhvc1[0m
+crw--w----  1 root tty     229,   2 Apr 17 08:57 [40;33;01mhvc2[0m
+crw-------  1 root root    229,   3 Apr 17 08:57 [40;33;01mhvc3[0m
+crw-------  1 root root    229,   4 Apr 17 08:57 [40;33;01mhvc4[0m
+crw-------  1 root root    229,   5 Apr 17 08:57 [40;33;01mhvc5[0m
+crw-------  1 root root    229,   6 Apr 17 08:57 [40;33;01mhvc6[0m
+crw-------  1 root root    229,   7 Apr 17 08:57 [40;33;01mhvc7[0m
+crw-------  1 root root     10, 183 Apr 17 08:57 [40;33;01mhwrng[0m
+lrwxrwxrwx  1 root root          12 Apr 17 08:57 [01;36minitctl[0m -> [40;33m/run/initctl[0m
+crw-r--r--  1 root root      1,  11 Apr 17 08:57 [40;33;01mkmsg[0m
+crw-rw----  1 root kvm      10, 232 Apr 17 08:57 [40;33;01mkvm[0m
+lrwxrwxrwx  1 root root          28 Apr 17 08:57 [01;36mlog[0m -> [01;35m/run/systemd/journal/dev-log[0m
+crw-rw----  1 root disk     10, 237 Apr 17 08:57 [40;33;01mloop-control[0m
+brw-rw----  1 root disk      7,   0 Apr 17 08:57 [40;33;01mloop0[0m
+brw-rw----  1 root disk      7,   1 Apr 17 08:57 [40;33;01mloop1[0m
+brw-rw----  1 root disk      7,   2 Apr 17 08:57 [40;33;01mloop2[0m
+brw-rw----  1 root disk      7,   3 Apr 17 08:57 [40;33;01mloop3[0m
+brw-rw----  1 root disk      7,   4 Apr 17 08:57 [40;33;01mloop4[0m
+brw-rw----  1 root disk      7,   5 Apr 17 08:57 [40;33;01mloop5[0m
+brw-rw----  1 root disk      7,   6 Apr 17 08:57 [40;33;01mloop6[0m
+brw-rw----  1 root disk      7,   7 Apr 17 08:57 [40;33;01mloop7[0m
+drwxr-xr-x  2 root root          60 Apr 17 08:57 [01;34mmapper[0m
+crw-------  1 root root     10, 227 Apr 17 08:57 [40;33;01mmcelog[0m
+crw-r-----  1 root kmem      1,   1 Apr 17 08:57 [40;33;01mmem[0m
+crw-------  1 root root     10, 220 Apr 17 08:57 [40;33;01mmptctl[0m
+drwxrwxrwt  2 root root          40 Apr 17 08:57 [30;42mmqueue[0m
+drwxr-xr-x  2 root root          60 Apr 17 08:57 [01;34mnet[0m
+crw-rw-rw-  1 root root      1,   3 Apr 17 08:57 [40;33;01mnull[0m
+crw-------  1 root root     10, 144 Apr 17 08:57 [40;33;01mnvram[0m
+crw-------  1 root root    108,   0 Apr 17 08:57 [40;33;01mppp[0m
+crw-rw-rw-  1 root tty       5,   2 Apr 17 09:45 [40;33;01mptmx[0m
+crw-------  1 root root    247,   0 Apr 17 08:57 [40;33;01mptp0[0m
+lrwxrwxrwx  1 root root           4 Apr 17 08:57 [01;36mptp_hyperv[0m -> [40;33;01mptp0[0m
+drwxr-xr-x  2 root root           0 Apr 17 08:57 [01;34mpts[0m
+brw-rw----  1 root disk      1,   0 Apr 17 08:57 [40;33;01mram0[0m
+brw-rw----  1 root disk      1,   1 Apr 17 08:57 [40;33;01mram1[0m
+brw-rw----  1 root disk      1,  10 Apr 17 08:57 [40;33;01mram10[0m
+brw-rw----  1 root disk      1,  11 Apr 17 08:57 [40;33;01mram11[0m
+brw-rw----  1 root disk      1,  12 Apr 17 08:57 [40;33;01mram12[0m
+brw-rw----  1 root disk      1,  13 Apr 17 08:57 [40;33;01mram13[0m
+brw-rw----  1 root disk      1,  14 Apr 17 08:57 [40;33;01mram14[0m
+brw-rw----  1 root disk      1,  15 Apr 17 08:57 [40;33;01mram15[0m
+brw-rw----  1 root disk      1,   2 Apr 17 08:57 [40;33;01mram2[0m
+brw-rw----  1 root disk      1,   3 Apr 17 08:57 [40;33;01mram3[0m
+brw-rw----  1 root disk      1,   4 Apr 17 08:57 [40;33;01mram4[0m
+brw-rw----  1 root disk      1,   5 Apr 17 08:57 [40;33;01mram5[0m
+brw-rw----  1 root disk      1,   6 Apr 17 08:57 [40;33;01mram6[0m
+brw-rw----  1 root disk      1,   7 Apr 17 08:57 [40;33;01mram7[0m
+brw-rw----  1 root disk      1,   8 Apr 17 08:57 [40;33;01mram8[0m
+brw-rw----  1 root disk      1,   9 Apr 17 08:57 [40;33;01mram9[0m
+crw-rw-rw-  1 root root      1,   8 Apr 17 08:57 [40;33;01mrandom[0m
+lrwxrwxrwx  1 root root           4 Apr 17 08:57 [01;36mrtc[0m -> [40;33;01mrtc0[0m
+crw-------  1 root root    249,   0 Apr 17 08:57 [40;33;01mrtc0[0m
+brw-rw----  1 root disk      8,   0 Apr 17 08:57 [40;33;01msda[0m
+brw-rw----  1 root disk      8,  16 Apr 17 08:57 [40;33;01msdb[0m
+brw-rw----  1 root disk      8,  32 Apr 17 08:57 [40;33;01msdc[0m
+brw-rw----  1 root disk      8,  48 Apr 17 08:57 [40;33;01msdd[0m
+crw-rw----  1 root disk     21,   0 Apr 17 08:57 [40;33;01msg0[0m
+crw-rw----  1 root disk     21,   1 Apr 17 08:57 [40;33;01msg1[0m
+crw-rw----  1 root disk     21,   2 Apr 17 08:57 [40;33;01msg2[0m
+crw-rw----  1 root disk     21,   3 Apr 17 08:57 [40;33;01msg3[0m
+drwxrwxrwt  2 root root          40 Apr 17 08:57 [30;42mshm[0m
+crw-------  1 root root     10, 231 Apr 17 08:57 [40;33;01msnapshot[0m
+drwxr-xr-x  2 root root          60 Apr 17 08:57 [01;34msnd[0m
+lrwxrwxrwx  1 root root          15 Apr 17 08:57 [01;36mstderr[0m -> [40;33;01m/proc/self/fd/2[0m
+lrwxrwxrwx  1 root root          15 Apr 17 08:57 [01;36mstdin[0m -> [40;33;01m/proc/self/fd/0[0m
+lrwxrwxrwx  1 root root          15 Apr 17 08:57 [01;36mstdout[0m -> [40;33;01m/proc/self/fd/1[0m
+crw-rw-rw-  1 root tty       5,   0 Apr 17 08:57 [40;33;01mtty[0m
+crw--w----  1 root tty       4,   0 Apr 17 08:57 [40;33;01mtty0[0m
+crw--w----  1 root tty       4,   1 Apr 17 08:57 [40;33;01mtty1[0m
+crw--w----  1 root tty       4,  10 Apr 17 08:57 [40;33;01mtty10[0m
+crw--w----  1 root tty       4,  11 Apr 17 08:57 [40;33;01mtty11[0m
+crw--w----  1 root tty       4,  12 Apr 17 08:57 [40;33;01mtty12[0m
+crw--w----  1 root tty       4,  13 Apr 17 08:57 [40;33;01mtty13[0m
+crw--w----  1 root tty       4,  14 Apr 17 08:57 [40;33;01mtty14[0m
+crw--w----  1 root tty       4,  15 Apr 17 08:57 [40;33;01mtty15[0m
+crw--w----  1 root tty       4,  16 Apr 17 08:57 [40;33;01mtty16[0m
+crw--w----  1 root tty       4,  17 Apr 17 08:57 [40;33;01mtty17[0m
+crw--w----  1 root tty       4,  18 Apr 17 08:57 [40;33;01mtty18[0m
+crw--w----  1 root tty       4,  19 Apr 17 08:57 [40;33;01mtty19[0m
+crw--w----  1 root tty       4,   2 Apr 17 08:57 [40;33;01mtty2[0m
+crw--w----  1 root tty       4,  20 Apr 17 08:57 [40;33;01mtty20[0m
+crw--w----  1 root tty       4,  21 Apr 17 08:57 [40;33;01mtty21[0m
+crw--w----  1 root tty       4,  22 Apr 17 08:57 [40;33;01mtty22[0m
+crw--w----  1 root tty       4,  23 Apr 17 08:57 [40;33;01mtty23[0m
+crw--w----  1 root tty       4,  24 Apr 17 08:57 [40;33;01mtty24[0m
+crw--w----  1 root tty       4,  25 Apr 17 08:57 [40;33;01mtty25[0m
+crw--w----  1 root tty       4,  26 Apr 17 08:57 [40;33;01mtty26[0m
+crw--w----  1 root tty       4,  27 Apr 17 08:57 [40;33;01mtty27[0m
+crw--w----  1 root tty       4,  28 Apr 17 08:57 [40;33;01mtty28[0m
+crw--w----  1 root tty       4,  29 Apr 17 08:57 [40;33;01mtty29[0m
+crw--w----  1 root tty       4,   3 Apr 17 08:57 [40;33;01mtty3[0m
+crw--w----  1 root tty       4,  30 Apr 17 08:57 [40;33;01mtty30[0m
+crw--w----  1 root tty       4,  31 Apr 17 08:57 [40;33;01mtty31[0m
+crw--w----  1 root tty       4,  32 Apr 17 08:57 [40;33;01mtty32[0m
+crw--w----  1 root tty       4,  33 Apr 17 08:57 [40;33;01mtty33[0m
+crw--w----  1 root tty       4,  34 Apr 17 08:57 [40;33;01mtty34[0m
+crw--w----  1 root tty       4,  35 Apr 17 08:57 [40;33;01mtty35[0m
+crw--w----  1 root tty       4,  36 Apr 17 08:57 [40;33;01mtty36[0m
+crw--w----  1 root tty       4,  37 Apr 17 08:57 [40;33;01mtty37[0m
+crw--w----  1 root tty       4,  38 Apr 17 08:57 [40;33;01mtty38[0m
+crw--w----  1 root tty       4,  39 Apr 17 08:57 [40;33;01mtty39[0m
+crw--w----  1 root tty       4,   4 Apr 17 08:57 [40;33;01mtty4[0m
+crw--w----  1 root tty       4,  40 Apr 17 08:57 [40;33;01mtty40[0m
+crw--w----  1 root tty       4,  41 Apr 17 08:57 [40;33;01mtty41[0m
+crw--w----  1 root tty       4,  42 Apr 17 08:57 [40;33;01mtty42[0m
+crw--w----  1 root tty       4,  43 Apr 17 08:57 [40;33;01mtty43[0m
+crw--w----  1 root tty       4,  44 Apr 17 08:57 [40;33;01mtty44[0m
+crw--w----  1 root tty       4,  45 Apr 17 08:57 [40;33;01mtty45[0m
+crw--w----  1 root tty       4,  46 Apr 17 08:57 [40;33;01mtty46[0m
+crw--w----  1 root tty       4,  47 Apr 17 08:57 [40;33;01mtty47[0m
+crw--w----  1 root tty       4,  48 Apr 17 08:57 [40;33;01mtty48[0m
+crw--w----  1 root tty       4,  49 Apr 17 08:57 [40;33;01mtty49[0m
+crw--w----  1 root tty       4,   5 Apr 17 08:57 [40;33;01mtty5[0m
+crw--w----  1 root tty       4,  50 Apr 17 08:57 [40;33;01mtty50[0m
+crw--w----  1 root tty       4,  51 Apr 17 08:57 [40;33;01mtty51[0m
+crw--w----  1 root tty       4,  52 Apr 17 08:57 [40;33;01mtty52[0m
+crw--w----  1 root tty       4,  53 Apr 17 08:57 [40;33;01mtty53[0m
+crw--w----  1 root tty       4,  54 Apr 17 08:57 [40;33;01mtty54[0m
+crw--w----  1 root tty       4,  55 Apr 17 08:57 [40;33;01mtty55[0m
+crw--w----  1 root tty       4,  56 Apr 17 08:57 [40;33;01mtty56[0m
+crw--w----  1 root tty       4,  57 Apr 17 08:57 [40;33;01mtty57[0m
+crw--w----  1 root tty       4,  58 Apr 17 08:57 [40;33;01mtty58[0m
+crw--w----  1 root tty       4,  59 Apr 17 08:57 [40;33;01mtty59[0m
+crw--w----  1 root tty       4,   6 Apr 17 08:57 [40;33;01mtty6[0m
+crw--w----  1 root tty       4,  60 Apr 17 08:57 [40;33;01mtty60[0m
+crw--w----  1 root tty       4,  61 Apr 17 08:57 [40;33;01mtty61[0m
+crw--w----  1 root tty       4,  62 Apr 17 08:57 [40;33;01mtty62[0m
+crw--w----  1 root tty       4,  63 Apr 17 08:57 [40;33;01mtty63[0m
+crw--w----  1 root tty       4,   7 Apr 17 08:57 [40;33;01mtty7[0m
+crw--w----  1 root tty       4,   8 Apr 17 08:57 [40;33;01mtty8[0m
+crw--w----  1 root tty       4,   9 Apr 17 08:57 [40;33;01mtty9[0m
+crw-rw----  1 root dialout   4,  64 Apr 17 08:57 [40;33;01mttyS0[0m
+crw-rw----  1 root dialout   4,  65 Apr 17 08:57 [40;33;01mttyS1[0m
+crw-rw----  1 root dialout   4,  66 Apr 17 08:57 [40;33;01mttyS2[0m
+crw-rw----  1 root dialout   4,  67 Apr 17 08:57 [40;33;01mttyS3[0m
+crw-rw----  1 root dialout   4,  68 Apr 17 08:57 [40;33;01mttyS4[0m
+crw-rw----  1 root dialout   4,  69 Apr 17 08:57 [40;33;01mttyS5[0m
+crw-rw----  1 root dialout   4,  70 Apr 17 08:57 [40;33;01mttyS6[0m
+crw-rw----  1 root dialout   4,  71 Apr 17 08:57 [40;33;01mttyS7[0m
+crw-------  1 root root     10, 223 Apr 17 08:57 [40;33;01muinput[0m
+crw-rw-rw-  1 root root      1,   9 Apr 17 08:57 [40;33;01murandom[0m
+crw-------  1 root root     10, 126 Apr 17 08:57 [40;33;01muserfaultfd[0m
+crw-rw----  1 root tty       7,   0 Apr 17 08:57 [40;33;01mvcs[0m
+crw-rw----  1 root tty       7,   1 Apr 17 08:57 [40;33;01mvcs1[0m
+crw-rw----  1 root tty       7,   2 Apr 17 08:57 [40;33;01mvcs2[0m
+crw-rw----  1 root tty       7,   3 Apr 17 08:57 [40;33;01mvcs3[0m
+crw-rw----  1 root tty       7,   4 Apr 17 08:57 [40;33;01mvcs4[0m
+crw-rw----  1 root tty       7,   5 Apr 17 08:57 [40;33;01mvcs5[0m
+crw-rw----  1 root tty       7,   6 Apr 17 08:57 [40;33;01mvcs6[0m
+crw-rw----  1 root tty       7, 128 Apr 17 08:57 [40;33;01mvcsa[0m
+crw-rw----  1 root tty       7, 129 Apr 17 08:57 [40;33;01mvcsa1[0m
+crw-rw----  1 root tty       7, 130 Apr 17 08:57 [40;33;01mvcsa2[0m
+crw-rw----  1 root tty       7, 131 Apr 17 08:57 [40;33;01mvcsa3[0m
+crw-rw----  1 root tty       7, 132 Apr 17 08:57 [40;33;01mvcsa4[0m
+crw-rw----  1 root tty       7, 133 Apr 17 08:57 [40;33;01mvcsa5[0m
+crw-rw----  1 root tty       7, 134 Apr 17 08:57 [40;33;01mvcsa6[0m
+crw-rw----  1 root tty       7,  64 Apr 17 08:57 [40;33;01mvcsu[0m
+crw-rw----  1 root tty       7,  65 Apr 17 08:57 [40;33;01mvcsu1[0m
+crw-rw----  1 root tty       7,  66 Apr 17 08:57 [40;33;01mvcsu2[0m
+crw-rw----  1 root tty       7,  67 Apr 17 08:57 [40;33;01mvcsu3[0m
+crw-rw----  1 root tty       7,  68 Apr 17 08:57 [40;33;01mvcsu4[0m
+crw-rw----  1 root tty       7,  69 Apr 17 08:57 [40;33;01mvcsu5[0m
+crw-rw----  1 root tty       7,  70 Apr 17 08:57 [40;33;01mvcsu6[0m
+drwxr-xr-x  2 root root          60 Apr 17 08:57 [01;34mvfio[0m
+crw-------  1 root root     10, 127 Apr 17 08:57 [40;33;01mvga_arbiter[0m
+crw-rw----  1 root kvm      10, 238 Apr 17 08:57 [40;33;01mvhost-net[0m
+crw-rw----  1 root kvm      10, 241 Apr 17 08:57 [40;33;01mvhost-vsock[0m
+drwxr-xr-x  2 root root         100 Apr 17 08:57 [01;34mvirtio-ports[0m
+crw-------  1 root root    244,   0 Apr 17 08:57 [40;33;01mvport0p0[0m
+crw-------  1 root root    244,   1 Apr 17 08:57 [40;33;01mvport0p1[0m
+crw-------  1 root root    244,   2 Apr 17 08:57 [40;33;01mvport0p2[0m
+crw-rw-rw-  1 root root     10, 124 Apr 17 08:57 [40;33;01mvsock[0m
+crw-rw-rw-  1 root root      1,   5 Apr 17 08:57 [40;33;01mzero[0m
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7[00m$ sudo fdist[Kk -l
+[?2004l[sudo] password for asd: 
+[1mDisk /dev/ram0: 4 MiB, 4194304 bytes, 8192 sectors
+[0mUnits: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+[1mDisk /dev/ram1: 4 MiB, 4194304 bytes, 8192 sectors
+[0mUnits: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+[1mDisk /dev/ram2: 4 MiB, 4194304 bytes, 8192 sectors
+[0mUnits: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+[1mDisk /dev/ram3: 4 MiB, 4194304 bytes, 8192 sectors
+[0mUnits: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+[1mDisk /dev/ram4: 4 MiB, 4194304 bytes, 8192 sectors
+[0mUnits: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+[1mDisk /dev/ram5: 4 MiB, 4194304 bytes, 8192 sectors
+[0mUnits: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+[1mDisk /dev/ram6: 4 MiB, 4194304 bytes, 8192 sectors
+[0mUnits: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+[1mDisk /dev/ram7: 4 MiB, 4194304 bytes, 8192 sectors
+[0mUnits: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+[1mDisk /dev/ram8: 4 MiB, 4194304 bytes, 8192 sectors
+[0mUnits: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+[1mDisk /dev/ram9: 4 MiB, 4194304 bytes, 8192 sectors
+[0mUnits: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+[1mDisk /dev/ram10: 4 MiB, 4194304 bytes, 8192 sectors
+[0mUnits: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+[1mDisk /dev/ram11: 4 MiB, 4194304 bytes, 8192 sectors
+[0mUnits: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+[1mDisk /dev/ram12: 4 MiB, 4194304 bytes, 8192 sectors
+[0mUnits: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+[1mDisk /dev/ram13: 4 MiB, 4194304 bytes, 8192 sectors
+[0mUnits: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+[1mDisk /dev/ram14: 4 MiB, 4194304 bytes, 8192 sectors
+[0mUnits: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+[1mDisk /dev/ram15: 4 MiB, 4194304 bytes, 8192 sectors
+[0mUnits: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+[1mDisk /dev/sda: 388.61 MiB, 407490560 bytes, 795880 sectors
+[0mDisk model: Virtual Disk    
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+[1mDisk /dev/sdb: 186.04 MiB, 195080192 bytes, 381016 sectors
+[0mDisk model: Virtual Disk    
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+[1mDisk /dev/sdc: 4 GiB, 4294971392 bytes, 8388616 sectors
+[0mDisk model: Virtual Disk    
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+[1mDisk /dev/sdd: 1 TiB, 1099511627776 bytes, 2147483648 sectors
+[0mDisk model: Virtual Disk    
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7[00m$ fdisk --version
+[?2004lfdisk from util-linux 2.39.3
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7[00m$ touch test
+[?2004l[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7[00m$ -al[K[K[Kll
+[?2004ltotal 52
+drwxr-xr-x 2 asd asd  4096 Apr 17 10:12 [0m[01;34m.[0m/
+drwxr-xr-x 8 asd asd  4096 Apr 17 09:26 [01;34m..[0m/
+-rw-r--r-- 1 asd asd 26490 Apr 17 10:12 2026_20211011_week07_log.txt
+-rw-r--r-- 1 asd asd 13425 Apr 17 10:12 t.txt
+-rw-r--r-- 1 asd asd     0 Apr 17 10:12 test
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7[00m$ stat test
+[?2004l  File: test
+  Size: 0         	Blocks: 0          IO Block: 4096   regular empty file
+Device: 8,48	Inode: 14563       Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1000/     asd)   Gid: ( 1000/     asd)
+Access: 2026-04-17 10:12:13.715158561 +0900
+Modify: 2026-04-17 10:12:13.715158561 +0900
+Change: 2026-04-17 10:12:13.715158561 +0900
+ Birth: 2026-04-17 10:12:13.715158561 +0900
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7[00m$ df -i
+[?2004lFilesystem       Inodes   IUsed    IFree IUse% Mounted on
+none            2026905       5  2026900    1% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+none            2026905       2  2026903    1% /mnt/wsl
+drivers             999 -999001  1000000     - /usr/lib/wsl/drivers
+/dev/sdd       67108864   62055 67046809    1% /
+none            2026905      33  2026872    1% /mnt/wslg
+none            2026905       6  2026899    1% /usr/lib/wsl/lib
+rootfs          2025645      12  2025633    1% /init
+none            2026905     622  2026283    1% /run
+none            2026905       2  2026903    1% /run/lock
+none            2026905       1  2026904    1% /run/shm
+none            2026905      54  2026851    1% /mnt/wslg/versions.txt
+none            2026905      54  2026851    1% /mnt/wslg/doc
+C:\                 999 -999001  1000000     - /mnt/c
+D:\                 999 -999001  1000000     - /mnt/d
+E:\                 999 -999001  1000000     - /mnt/e
+tmpfs            405381      43   405338    1% /run/user/1000
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7[00m$ sudo [K[K[K[K[Kls
+[?2004l2026_20211011_week07_log.txt  t.txt  test
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7[00m$ sudo nano test
+[?2004l[sudo] password for asd: 
+[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;54H(B[0;7m[ Reading... ](B[m[28;53H(B[0;7m[ Read 0 lines ](B[m[H(B[0;7m  GNU nano 7.2                                              test                                                        [1;119H(B[m[29d(B[0;7m^G(B[m Help[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2d[?12l[?25h[?25l[1;66H(B[0;7m*[119G(B[m[?12l[?25h[2da[?25l[?12l[?25hs[?25l[?12l[?25hd[?25l[?12l[?25hf[?25l[3d[?12l[?25h[?25l[Aasdf[?12l[?25h[?25l[28;34H(B[0;7m[ line  1/2 (50%), col  5/ 5 (100%), char  4/5 (80%) ](B[m[?12l[?25h[2;5H[?25l[28;88H[?12l[?25h[2;5H[?25l[28;88H[?12l[?25h[2;5H[?25l[?12l[?25h[?25l[28;53H[1K (B[0;7m[ Writing... ](B[m[K[1;66H(B[0;7m [119G(B[m[28;53H(B[0;7m[ Wrote 1 line ](B[m[?12l[?25h[2;5H[?25l[28d[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7[00m$ stat test
+[?2004l  File: test
+  Size: 5         	Blocks: 8          IO Block: 4096   regular file
+Device: 8,48	Inode: 14563       Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1000/     asd)   Gid: ( 1000/     asd)
+Access: 2026-04-17 10:16:46.551376128 +0900
+Modify: 2026-04-17 10:16:54.290068397 +0900
+Change: 2026-04-17 10:16:54.290068397 +0900
+ Birth: 2026-04-17 10:12:13.715158561 +0900
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7[00m$ df -i
+[?2004lFilesystem       Inodes   IUsed    IFree IUse% Mounted on
+none            2026905       5  2026900    1% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+none            2026905       2  2026903    1% /mnt/wsl
+drivers             999 -999001  1000000     - /usr/lib/wsl/drivers
+/dev/sdd       67108864   62055 67046809    1% /
+none            2026905      33  2026872    1% /mnt/wslg
+none            2026905       6  2026899    1% /usr/lib/wsl/lib
+rootfs          2025645      12  2025633    1% /init
+none            2026905     622  2026283    1% /run
+none            2026905       2  2026903    1% /run/lock
+none            2026905       1  2026904    1% /run/shm
+none            2026905      54  2026851    1% /mnt/wslg/versions.txt
+none            2026905      54  2026851    1% /mnt/wslg/doc
+C:\                 999 -999001  1000000     - /mnt/c
+D:\                 999 -999001  1000000     - /mnt/d
+E:\                 999 -999001  1000000     - /mnt/e
+tmpfs            405381      43   405338    1% /run/user/1000
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7[00m$ Guma[K[K[K[Kstat e[Ktest
+[?2004l  File: test
+  Size: 5         	Blocks: 8          IO Block: 4096   regular file
+Device: 8,48	Inode: 14563       Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1000/     asd)   Gid: ( 1000/     asd)
+Access: 2026-04-17 10:16:46.551376128 +0900
+Modify: 2026-04-17 10:16:54.290068397 +0900
+Change: 2026-04-17 10:16:54.290068397 +0900
+ Birth: 2026-04-17 10:12:13.715158561 +0900
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7[00m$ [7mscript -t=t.txt -af 2026_학번_week07_log.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pscript -t=t.txt -af 2026_학번_week07_log.tx[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kmkdir test
+[?2004lmkdir: cannot create directory ‘test’: File exists
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7[00m$ mkdir test2
+[?2004l[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7[00m$ ls
+[?2004l2026_20211011_week07_log.txt  t.txt  test  [0m[01;34mtest2[0m
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7[00m$ state[K test2
+[?2004l  File: test2
+  Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: 8,48	Inode: 20692       Links: 2
+Access: (0755/drwxr-xr-x)  Uid: ( 1000/     asd)   Gid: ( 1000/     asd)
+Access: 2026-04-17 10:21:28.645386358 +0900
+Modify: 2026-04-17 10:21:28.645386358 +0900
+Change: 2026-04-17 10:21:28.645386358 +0900
+ Birth: 2026-04-17 10:21:28.645386358 +0900
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7[00m$ cd test2/
+[?2004l[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7/test2[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7/test2[00m$ mkdir test3
+[?2004l[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7/test2[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7/test2[00m$ stat test3
+[?2004l  File: test3
+  Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: 8,48	Inode: 31120       Links: 2
+Access: (0755/drwxr-xr-x)  Uid: ( 1000/     asd)   Gid: ( 1000/     asd)
+Access: 2026-04-17 10:23:36.892741328 +0900
+Modify: 2026-04-17 10:23:36.892741328 +0900
+Change: 2026-04-17 10:23:36.892741328 +0900
+ Birth: 2026-04-17 10:23:36.892741328 +0900
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7/test2[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7/test2[00m$ ln test[K[K[K[K[K[K[Kls
+[?2004l[0m[01;34mtest3[0m
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7/test2[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7/test2[00m$ cd ..
+[?2004l[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7[00m$ ls
+[?2004l2026_20211011_week07_log.txt  t.txt  test  [0m[01;34mtest2[0m
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7[00m$ Lock[K[K[Kuck[K[K[K[Kln test hard
+[?2004l[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7[00m$ ls
+[?2004l2026_20211011_week07_log.txt  hard  t.txt  test  [0m[01;34mtest2[0m
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7[00m$ stat hard
+[?2004l  File: hard
+  Size: 5         	Blocks: 8          IO Block: 4096   regular file
+Device: 8,48	Inode: 14563       Links: 2
+Access: (0644/-rw-r--r--)  Uid: ( 1000/     asd)   Gid: ( 1000/     asd)
+Access: 2026-04-17 10:16:46.551376128 +0900
+Modify: 2026-04-17 10:16:54.290068397 +0900
+Change: 2026-04-17 10:26:58.212836655 +0900
+ Birth: 2026-04-17 10:12:13.715158561 +0900
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7[00m$ state[K test
+[?2004l  File: test
+  Size: 5         	Blocks: 8          IO Block: 4096   regular file
+Device: 8,48	Inode: 14563       Links: 2
+Access: (0644/-rw-r--r--)  Uid: ( 1000/     asd)   Gid: ( 1000/     asd)
+Access: 2026-04-17 10:16:46.551376128 +0900
+Modify: 2026-04-17 10:16:54.290068397 +0900
+Change: 2026-04-17 10:26:58.212836655 +0900
+ Birth: 2026-04-17 10:12:13.715158561 +0900
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7[00m$ in test hard2
+[?2004lbash: syntax error near unexpected token `in'
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7[00m$ ln test hard2
+[?2004l[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7[00m$ stat test
+[?2004l  File: test
+  Size: 5         	Blocks: 8          IO Block: 4096   regular file
+Device: 8,48	Inode: 14563       Links: 3
+Access: (0644/-rw-r--r--)  Uid: ( 1000/     asd)   Gid: ( 1000/     asd)
+Access: 2026-04-17 10:16:46.551376128 +0900
+Modify: 2026-04-17 10:16:54.290068397 +0900
+Change: 2026-04-17 10:28:40.045137160 +0900
+ Birth: 2026-04-17 10:12:13.715158561 +0900
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7[00m$ stat testln test hard2[K3
+[?2004l[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7[00m$ ln test hard3[4Pstat test
+[?2004l  File: test
+  Size: 5         	Blocks: 8          IO Block: 4096   regular file
+Device: 8,48	Inode: 14563       Links: 4
+Access: (0644/-rw-r--r--)  Uid: ( 1000/     asd)   Gid: ( 1000/     asd)
+Access: 2026-04-17 10:16:46.551376128 +0900
+Modify: 2026-04-17 10:16:54.290068397 +0900
+Change: 2026-04-17 10:29:40.521846962 +0900
+ Birth: 2026-04-17 10:12:13.715158561 +0900
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7[00m$ ln -s test symlink[K[K[K[K1
+[?2004l[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7[00m$ state [K[K[Kt test
+[?2004l  File: test
+  Size: 5         	Blocks: 8          IO Block: 4096   regular file
+Device: 8,48	Inode: 14563       Links: 4
+Access: (0644/-rw-r--r--)  Uid: ( 1000/     asd)   Gid: ( 1000/     asd)
+Access: 2026-04-17 10:16:46.551376128 +0900
+Modify: 2026-04-17 10:16:54.290068397 +0900
+Change: 2026-04-17 10:29:40.521846962 +0900
+ Birth: 2026-04-17 10:12:13.715158561 +0900
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7[00m$ stat si[Kym1
+[?2004l  File: sym1 -> test
+  Size: 4         	Blocks: 0          IO Block: 4096   symbolic link
+Device: 8,48	Inode: 34598       Links: 1
+Access: (0777/lrwxrwxrwx)  Uid: ( 1000/     asd)   Gid: ( 1000/     asd)
+Access: 2026-04-17 10:30:37.817580349 +0900
+Modify: 2026-04-17 10:30:37.817580349 +0900
+Change: 2026-04-17 10:30:37.817580349 +0900
+ Birth: 2026-04-17 10:30:37.817580349 +0900
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7[00m$ [7msudo du -ah --max-depth=1 /home | sort -hr[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo du -ah --max-depth=1 /home | sort -hr
+[?2004l[sudo] password for asd: 
+2.9M	/home
+2.6M	/home/asd
+48K	/home/student1
+36K	/home/student2
+24K	/home/student3
+24K	/home/guest
+20K	/home/web_admin
+20K	/home/student5
+20K	/home/student4
+20K	/home/guest2
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7[00m$ [7msudo du -sh /var/lib/docker[27msudo du -sh /var/lib/docker
+[?2004l302M	/var/lib/docker
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7[00m$ Toxik[Kc[K[K[K[K[Ksudo [7msudo ls -F /var/lib/docker[27m[1Psudo ls -F /var/lib/docke[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[7msudo ls -F /var/lib/docker[27msudo ls -F /var/lib/docker
+[?2004lbuildkit/  containers/	engine-id  image/  network/  plugins/  rootfs/	runtimes/  swarm/  tmp/  volumes/
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7[00m$ docker system dif[K[Kf -v
+[?2004lImages space usage:
+
+REPOSITORY    TAG           IMAGE ID       CREATED         SIZE      SHARED SIZE   UNIQUE SIZE   CONTAINERS
+nginx         alpine        e7257f1ef28b   3 weeks ago     93.5MB    0B            93.49MB       2
+nginx         latest        bc45d248c4e1   5 weeks ago     240MB     0B            240MB         1
+hello-world   latest        85404b3c5395   8 months ago    25.9kB    0B            25.9kB        1
+nginx         1.25-alpine   516475cc129d   23 months ago   75.4MB    0B            75.36MB       1
+
+Containers space usage:
+
+CONTAINER ID   IMAGE               COMMAND                  LOCAL VOLUMES   SIZE      CREATED       STATUS                   NAMES
+15b3050e32c6   nginx:alpine        "/docker-entrypoint.…"   0               5.98MB    7 days ago    Exited (0) 6 days ago    stress-nginx2
+3296a61b02d2   nginx:alpine        "/docker-entrypoint.…"   0               202MB     2 weeks ago   Up About an hour         stress-nginx
+c927b56ef14b   nginx:1.25-alpine   "/docker-entrypoint.…"   0               81.9kB    4 weeks ago   Up 2 hours               my-web-proxy
+3e374aee2ec8   nginx:latest        "/docker-entrypoint.…"   0               86kB      4 weeks ago   Exited (0) 4 weeks ago   my-nginx
+b564707c968b   hello-world         "/hello"                 0               4.1kB     5 weeks ago   Exited (0) 5 weeks ago   bold_kalam
+
+Local Volumes space usage:
+
+VOLUME NAME   LINKS     SIZE
+
+Build cache usage: 0B
+
+CACHE ID   CACHE TYPE   SIZE      CREATED   LAST USED   USAGE     SHARED
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7[00m$ docker iam[K[Kmages
+[?2004l                                                                                                    [1m[106m[30mi[0m[0m [96mInfo → [0m[0m [38;5;0m[48;5;14m U [0m In Use
+[39m[1mIMAGE[0m                [39m[1mID[0m             [39m[1mDISK USAGE[0m   [39m[1mCONTENT SIZE[0m   [39m[1mEXTRA[0m
+[34m[1mhello-world:latest[0m   [39m85404b3c5395[0m       [39m25.9kB[0m         [39m9.52kB[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1mnginx:1.25-alpine[0m    [39m516475cc129d[0m       [39m75.4MB[0m         [39m21.7MB[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1mnginx:alpine[0m         [39me7257f1ef28b[0m       [39m93.5MB[0m         [39m26.9MB[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1mnginx:latest[0m         [39mbc45d248c4e1[0m        [39m240MB[0m         [39m65.8MB[0m   [38;5;0m[48;5;14m U [0m  
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7[00m$ docker [K[K[K[K[K[K[K[7mdocker info | grep -i "storage driver"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker info | grep -i "storage driver"
+[?2004l [01;31m[KStorage Driver[m[K: overlayfs
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7[00m$ df -Th
+[?2004lFilesystem     Type     Size  Used Avail Use% Mounted on
+none           overlay  7.8G     0  7.8G   0% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+none           tmpfs    7.8G  4.0K  7.8G   1% /mnt/wsl
+drivers        9p       470G  402G   69G  86% /usr/lib/wsl/drivers
+/dev/sdd       ext4    1007G  3.1G  953G   1% /
+none           tmpfs    7.8G   76K  7.8G   1% /mnt/wslg
+none           overlay  7.8G     0  7.8G   0% /usr/lib/wsl/lib
+rootfs         rootfs   7.8G  2.7M  7.8G   1% /init
+none           tmpfs    7.8G  728K  7.8G   1% /run
+none           tmpfs    7.8G     0  7.8G   0% /run/lock
+none           tmpfs    7.8G     0  7.8G   0% /run/shm
+none           overlay  7.8G   76K  7.8G   1% /mnt/wslg/versions.txt
+none           overlay  7.8G   76K  7.8G   1% /mnt/wslg/doc
+C:\            9p       470G  402G   69G  86% /mnt/c
+D:\            9p       196M  127M   70M  65% /mnt/d
+E:\            9p       6.0G  4.9G  1.2G  82% /mnt/e
+tmpfs          tmpfs    1.6G   20K  1.6G   1% /run/user/1000
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7[00m$ [7mcat /proc/mounts | grep docker[27mcat /proc/mounts | grep docker
+[?2004l/dev/sdd /var/lib/[01;31m[Kdocker[m[K ext4 rw,relatime,discard,errors=remount-ro,data=ordered 0 0
+overlay /var/lib/[01;31m[Kdocker[m[K/rootfs/overlayfs/c927b56ef14b8d183676d967c01670d715b0f64b0026c92da3325dd3729b2dfc overlay rw,relatime,lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/26/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/21/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/20/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/19/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/18/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/17/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/16/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/15/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/14/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/27/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/27/work 0 0
+nsfs /run/[01;31m[Kdocker[m[K/netns/e3286f5b3306 nsfs rw 0 0
+overlay /var/lib/[01;31m[Kdocker[m[K/rootfs/overlayfs/3296a61b02d284a77d8ad95b1c5cd4874469341fb1c23f1c5597a4d7eda9453d overlay rw,relatime,lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/36/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/35/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/34/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/33/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/32/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/31/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/30/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/29/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/28/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/37/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/37/work 0 0
+nsfs /run/[01;31m[Kdocker[m[K/netns/50fbc4973662 nsfs rw 0 0
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7[00m$ f[Ks[Kdocker logs t[Kste[Kress-ngix[Knx[K[Knx
+[?2004l/docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+/docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+/docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+10-listen-on-ipv6-by-default.sh: info: Enabled listen on IPv6 in /etc/nginx/conf.d/default.conf
+/docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+/docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+/docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+/docker-entrypoint.sh: Configuration complete; ready for start up
+2026/04/03 00:35:12 [notice] 1#1: using the "epoll" event method
+2026/04/03 00:35:12 [notice] 1#1: nginx/1.29.7
+2026/04/03 00:35:12 [notice] 1#1: built by gcc 15.2.0 (Alpine 15.2.0) 
+2026/04/03 00:35:12 [notice] 1#1: OS: Linux 6.6.87.2-microsoft-standard-WSL2
+2026/04/03 00:35:12 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:1048576
+2026/04/03 00:35:12 [notice] 1#1: start worker processes
+2026/04/03 00:35:12 [notice] 1#1: start worker process 30
+2026/04/03 00:35:12 [notice] 1#1: start worker process 31
+2026/04/03 00:35:12 [notice] 1#1: start worker process 32
+2026/04/03 00:35:12 [notice] 1#1: start worker process 33
+2026/04/03 00:35:12 [notice] 1#1: start worker process 34
+2026/04/03 00:35:12 [notice] 1#1: start worker process 35
+2026/04/03 00:35:12 [notice] 1#1: start worker process 36
+2026/04/03 00:35:12 [notice] 1#1: start worker process 37
+2026/04/03 00:35:12 [notice] 1#1: start worker process 38
+2026/04/03 00:35:12 [notice] 1#1: start worker process 39
+2026/04/03 00:35:12 [notice] 1#1: start worker process 40
+2026/04/03 00:35:12 [notice] 1#1: start worker process 41
+172.17.0.1 - - [03/Apr/2026:00:36:52 +0000] "GET / HTTP/1.1" 200 896 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" "-"
+2026/04/03 00:36:52 [error] 30#30: *1 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.17.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost:8081", referrer: "http://localhost:8081/"
+172.17.0.1 - - [03/Apr/2026:00:36:52 +0000] "GET /favicon.ico HTTP/1.1" 404 555 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" "-"
+2026/04/03 02:34:39 [notice] 1#1: signal 17 (SIGCHLD) received from 69
+2026/04/03 02:34:39 [notice] 1#1: unknown process 69 exited with code 0
+/docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+/docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+/docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+10-listen-on-ipv6-by-default.sh: info: IPv6 listen already enabled
+/docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+/docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+/docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+/docker-entrypoint.sh: Configuration complete; ready for start up
+2026/04/17 00:31:29 [notice] 1#1: using the "epoll" event method
+2026/04/17 00:31:29 [notice] 1#1: nginx/1.29.7
+2026/04/17 00:31:29 [notice] 1#1: built by gcc 15.2.0 (Alpine 15.2.0) 
+2026/04/17 00:31:29 [notice] 1#1: OS: Linux 6.6.87.2-microsoft-standard-WSL2
+2026/04/17 00:31:29 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:1048576
+2026/04/17 00:31:29 [notice] 1#1: start worker processes
+2026/04/17 00:31:29 [notice] 1#1: start worker process 22
+2026/04/17 00:31:29 [notice] 1#1: start worker process 23
+2026/04/17 00:31:29 [notice] 1#1: start worker process 24
+2026/04/17 00:31:29 [notice] 1#1: start worker process 25
+2026/04/17 00:31:29 [notice] 1#1: start worker process 26
+2026/04/17 00:31:29 [notice] 1#1: start worker process 27
+2026/04/17 00:31:29 [notice] 1#1: start worker process 28
+2026/04/17 00:31:29 [notice] 1#1: start worker process 29
+2026/04/17 00:31:29 [notice] 1#1: start worker process 30
+2026/04/17 00:31:29 [notice] 1#1: start worker process 31
+2026/04/17 00:31:29 [notice] 1#1: start worker process 32
+2026/04/17 00:31:29 [notice] 1#1: start worker process 33
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week7[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week7[00m$ exit
+[?2004lexit
+
+Script done on 2026-04-17 10:58:51+09:00 [COMMAND_EXIT_CODE="0"]

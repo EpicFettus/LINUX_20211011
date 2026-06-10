@@ -1,0 +1,1527 @@
+Script started on 2026-06-05 09:26:58+09:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="76" LINES="41"]
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/2026-06-05[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/2026-06-05[00m$ cd ..
+[?2004l[?2004h]0;asd@DESKTOP-GG23J57: ~/linux[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux[00m$ ls
+[?2004l[0m[01;34m2026-05-15[0m  [01;34m2026-05-29[0m  [01;34m2026-06-05[0m  [01;34mweek03[0m  [01;34mweek06[0m  [01;34mweek09[0m  [01;34mweek11[0m
+[01;34m2026-05-22[0m  [01;34m2026-06-03[0m  [01;34mweek02[0m      [01;34mweek05[0m  [01;34mweek07[0m  [01;34mweek10[0m
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux[00m$ cd week[K[K[K[K[K[K[Kmak[K[K[Kmake dir[K[K[K[K[K[K[K[Kmkdir week13
+[?2004l[?2004h]0;asd@DESKTOP-GG23J57: ~/linux[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux[00m$ dmddo[K[K[K[K[Kemddo[K[K[K[K[Kcd week13
+[?2004l[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13[00m$ ls -al
+[?2004ltotal 8
+drwxr-xr-x  2 asd asd 4096 Jun  5 09:27 [0m[01;34m.[0m
+drwxr-xr-x 17 asd asd 4096 Jun  5 09:27 [01;34m..[0m
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13[00m$ ba[K[KYoungjae[K[K[KJae[K[K[K[K[K[K[K[Kmkdir -p ~/[K[K[K[K[K[K[K[K[K[K[Kmkdir -p ~/\[K[K[K[K[K[K[K[K[K[K[K[K[7mmkdir -p ~/week13/backup/db[27mmkdir -p ~/week13/backup/db
+[?2004l[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13[00m$ [7mmkdir -p ~/week13/backup/files[27mmkdir -p ~/week13/backup/files
+[?2004l[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13[00m$ [7mmkdir -p ~/week13/restore[27mmkdir -p ~/week13/restore
+[?2004l[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13[00m$ ls[K[Kls
+[?2004l[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13[00m$ ls[1Ps[Kmkdir[K[K[K[K[K[7mmkdir -p ~/week13/backup/db[27mmkdir -p ~/week13/backup/db[C[C[C/backup/dbl/backup/dbi/backup/dbn/backup/dbu/backup/dbx/backup/db[C[C[1P/backup/db[1P/backup/db[1P/backup/db[1P/backup/db[1P/backup/db[1Pbackup/dblweek13/backup/dbiweek13/backup/dbnweek13/backup/dbuweek13/backup/dbxweek13/backup/db/week13/backup/db[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13[00m$ mkdir -p ~/linux/week13/backup/db[C[C[C[C[C[C[C[C[C[C[C[C[C[K[Kfiles
+[?2004l[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13[00m$ mkdir -p ~/linux/week13/backup/files[K[K[K[K[K[K[K[K[K[K[K[Krestore
+[?2004l[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13[00m$ ls
+[?2004l[0m[01;34mbackup[0m  [01;34mrestore[0m
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13[00m$ sudo [K[K[K[K[Ksudo apt install restic[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksudo apt install restic -y
+[?2004l[sudo] password for asd: 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+The following additional packages will be installed:
+  fonts-font-awesome fonts-lato javascript-common libjs-jquery
+  libjs-sphinxdoc libjs-underscore sphinx-rtd-theme-common
+Suggested packages:
+  apache2 | lighttpd | httpd
+The following NEW packages will be installed:
+  fonts-font-awesome fonts-lato javascript-common libjs-jquery
+  libjs-sphinxdoc libjs-underscore restic sphinx-rtd-theme-common
+0 upgraded, 8 newly installed, 0 to remove and 43 not upgraded.
+Need to get 12.8 MB of archives.
+After this operation, 37.9 MB of additional disk space will be used.
+[33m0% [Working][0m[33m0% [Waiting for headers][0m                        Get:1 http://archive.ubuntu.com/ubuntu noble/main amd64 fonts-lato all 2.015-1 [2781 kB]
+[33m0% [1 fonts-lato 47.8 kB/2781 kB 2%][0m[33m2% [1 fonts-lato 311 kB/2781 kB 11%][0m[33m10% [1 fonts-lato 1552 kB/2781 kB 56%][0m[33m                                      20% [Working][0m             Get:2 http://archive.ubuntu.com/ubuntu noble/main amd64 fonts-font-awesome all 5.0.10+really4.7.0~dfsg-4.1 [516 kB]
+[33m20% [2 fonts-font-awesome 0 B/516 kB 0%][0m[33m22% [2 fonts-font-awesome 399 kB/516 kB 77%][0m[33m                                            26% [Waiting for headers][0m                         Get:3 http://archive.ubuntu.com/ubuntu noble/main amd64 javascript-common all 11+nmu1 [5936 B]
+                         Get:4 http://archive.ubuntu.com/ubuntu noble/main amd64 libjs-jquery all 3.6.1+dfsg+~3.5.14-1 [328 kB]
+[33m29% [4 libjs-jquery 69.6 kB/328 kB 21%][0m                                       Get:5 http://archive.ubuntu.com/ubuntu noble/main amd64 libjs-underscore all 1.13.4~dfsg+~1.11.4-3 [118 kB]
+[33m33% [5 libjs-underscore 64.1 kB/118 kB 54%][0m                                           Get:6 http://archive.ubuntu.com/ubuntu noble/main amd64 libjs-sphinxdoc all 7.2.6-6 [149 kB]
+[33m                                           36% [6 libjs-sphinxdoc 49.1 kB/149 kB 33%][0m[33m                                          39% [Waiting for headers][0m                         Get:7 http://archive.ubuntu.com/ubuntu noble/main amd64 sphinx-rtd-theme-common all 2.0.0+dfsg-1 [1012 kB]
+[33m39% [7 sphinx-rtd-theme-common 0 B/1012 kB 0%][0m[33m                                              48% [Waiting for headers][0m                         Get:8 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 restic amd64 0.16.4-2ubuntu0.24.04.3 [7903 kB]
+[33m48% [8 restic 1348 B/7903 kB 0%][0m[33m67% [8 restic 3053 kB/7903 kB 39%][0m[33m85% [8 restic 5931 kB/7903 kB 75%][0m[33m                                  100% [Working][0m              Fetched 12.8 MB in 4s (2935 kB/s)
+
+7[0;40r8[1ASelecting previously unselected package fonts-lato.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 43038 files and directories currently installed.)
+Preparing to unpack .../0-fonts-lato_2.015-1_all.deb ...
+7[41;0f[42m[30mProgress: [  0%][49m[39m [......................................................] 87[41;0f[42m[30mProgress: [  3%][49m[39m [#.....................................................] 8Unpacking fonts-lato (2.015-1) ...
+7[41;0f[42m[30mProgress: [  6%][49m[39m [###...................................................] 8Selecting previously unselected package fonts-font-awesome.
+Preparing to unpack .../1-fonts-font-awesome_5.0.10+really4.7.0~dfsg-4.1_all.deb ...
+7[41;0f[42m[30mProgress: [  9%][49m[39m [####..................................................] 8Unpacking fonts-font-awesome (5.0.10+really4.7.0~dfsg-4.1) ...
+7[41;0f[42m[30mProgress: [ 12%][49m[39m [######................................................] 8Selecting previously unselected package javascript-common.
+Preparing to unpack .../2-javascript-common_11+nmu1_all.deb ...
+7[41;0f[42m[30mProgress: [ 15%][49m[39m [########..............................................] 8Unpacking javascript-common (11+nmu1) ...
+7[41;0f[42m[30mProgress: [ 18%][49m[39m [#########.............................................] 8Selecting previously unselected package libjs-jquery.
+Preparing to unpack .../3-libjs-jquery_3.6.1+dfsg+~3.5.14-1_all.deb ...
+7[41;0f[42m[30mProgress: [ 21%][49m[39m [###########...........................................] 8Unpacking libjs-jquery (3.6.1+dfsg+~3.5.14-1) ...
+7[41;0f[42m[30mProgress: [ 24%][49m[39m [#############.........................................] 8Selecting previously unselected package libjs-underscore.
+Preparing to unpack .../4-libjs-underscore_1.13.4~dfsg+~1.11.4-3_all.deb ...
+7[41;0f[42m[30mProgress: [ 27%][49m[39m [##############........................................] 8Unpacking libjs-underscore (1.13.4~dfsg+~1.11.4-3) ...
+7[41;0f[42m[30mProgress: [ 30%][49m[39m [################......................................] 8Selecting previously unselected package libjs-sphinxdoc.
+Preparing to unpack .../5-libjs-sphinxdoc_7.2.6-6_all.deb ...
+7[41;0f[42m[30mProgress: [ 33%][49m[39m [#################.....................................] 8Unpacking libjs-sphinxdoc (7.2.6-6) ...
+7[41;0f[42m[30mProgress: [ 36%][49m[39m [###################...................................] 8Selecting previously unselected package sphinx-rtd-theme-common.
+Preparing to unpack .../6-sphinx-rtd-theme-common_2.0.0+dfsg-1_all.deb ...
+7[41;0f[42m[30mProgress: [ 39%][49m[39m [#####################.................................] 8Unpacking sphinx-rtd-theme-common (2.0.0+dfsg-1) ...
+7[41;0f[42m[30mProgress: [ 42%][49m[39m [######################................................] 8Selecting previously unselected package restic.
+Preparing to unpack .../7-restic_0.16.4-2ubuntu0.24.04.3_amd64.deb ...
+7[41;0f[42m[30mProgress: [ 45%][49m[39m [########################..............................] 8Unpacking restic (0.16.4-2ubuntu0.24.04.3) ...
+7[41;0f[42m[30mProgress: [ 48%][49m[39m [##########################............................] 8Setting up javascript-common (11+nmu1) ...
+7[41;0f[42m[30mProgress: [ 52%][49m[39m [###########################...........................] 87[41;0f[42m[30mProgress: [ 55%][49m[39m [#############################.........................] 8Setting up fonts-lato (2.015-1) ...
+7[41;0f[42m[30mProgress: [ 58%][49m[39m [###############################.......................] 87[41;0f[42m[30mProgress: [ 61%][49m[39m [################################......................] 8Setting up restic (0.16.4-2ubuntu0.24.04.3) ...
+7[41;0f[42m[30mProgress: [ 64%][49m[39m [##################################....................] 87[41;0f[42m[30mProgress: [ 67%][49m[39m [###################################...................] 8Setting up libjs-jquery (3.6.1+dfsg+~3.5.14-1) ...
+7[41;0f[42m[30mProgress: [ 70%][49m[39m [#####################################.................] 87[41;0f[42m[30mProgress: [ 73%][49m[39m [#######################################...............] 8Setting up fonts-font-awesome (5.0.10+really4.7.0~dfsg-4.1) ...
+7[41;0f[42m[30mProgress: [ 76%][49m[39m [########################################..............] 87[41;0f[42m[30mProgress: [ 79%][49m[39m [##########################################............] 8Setting up sphinx-rtd-theme-common (2.0.0+dfsg-1) ...
+7[41;0f[42m[30mProgress: [ 82%][49m[39m [############################################..........] 87[41;0f[42m[30mProgress: [ 85%][49m[39m [#############################################.........] 8Setting up libjs-underscore (1.13.4~dfsg+~1.11.4-3) ...
+7[41;0f[42m[30mProgress: [ 88%][49m[39m [###############################################.......] 87[41;0f[42m[30mProgress: [ 91%][49m[39m [#################################################.....] 8Setting up libjs-sphinxdoc (7.2.6-6) ...
+7[41;0f[42m[30mProgress: [ 94%][49m[39m [##################################################....] 87[41;0f[42m[30mProgress: [ 97%][49m[39m [####################################################..] 8Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for fontconfig (2.15.0-1.1ubuntu2) ...
+
+7[0;41r8[1A[J[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13[00m$ wich[K[K[Ki[Khich restic
+[?2004l/usr/bin/restic
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13[00m$ restic version
+[?2004lrestic 0.16.4 compiled with go1.22.2 on linux/amd64
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13[00m$ mkdir -p ~week[K[K[K[K[K[K[K[K[K[K[K[K[K[Kmkdir -p ~/linux/week13/restic-pr[K[Krepo
+[?2004l[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13[00m$ restic init --repo ~/week13/[K[K[K[K[K[K[Klinux/week13/restic -repo
+[?2004lenter password for new repository: 
+enter password again: 
+created restic repository 2ff72554c9 at /home/asd/linux/week13/restic-repo
+
+Please note that knowledge of your password is required to access
+the repository. Losing your password means that your data is
+irrecoverably lost.
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13[00m$ docker ps
+[?2004lCONTAINER ID   IMAGE                           COMMAND                  CREATED       STATUS                    PORTS                                                                                NAMES
+7f2cee518ee3   nginx:alpine                    "/docker-entrypoint.…"   7 days ago    Up 14 minutes             0.0.0.0:8080->80/tcp, [::]:8080->80/tcp, 0.0.0.0:8443->443/tcp, [::]:8443->443/tcp   wp_nginx
+7e64db8e0760   netdata/netdata:latest          "/usr/sbin/run.sh"       13 days ago   Up 14 minutes (healthy)   0.0.0.0:19999->19999/tcp, [::]:19999->19999/tcp                                      wp_netdata
+fb44136a91ab   portainer/portainer-ce:latest   "/portainer"             13 days ago   Up 14 minutes             8000/tcp, 9000/tcp, 0.0.0.0:9443->9443/tcp, [::]:9443->9443/tcp                      wp_portainer
+ef3555b90c10   wordpress:php8.2-fpm            "docker-entrypoint.s…"   2 weeks ago   Up 14 minutes             9000/tcp                                                                             wp_app
+1b7199bb7f93   mysql:8.0                       "docker-entrypoint.s…"   2 weeks ago   Up 14 minutes (healthy)   3306/tcp, 33060/tcp                                                                  wp_db
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13[00m$ docker volume inspect wordpess[K[K[Kress [K_wp_data
+[?2004l[
+    {
+        "CreatedAt": "2026-05-15T10:29:05+09:00",
+        "Driver": "local",
+        "Labels": {
+            "com.docker.compose.config-hash": "101ccfb75efebfb0649f1be6f3db366a65540af60664dcf11076e052467e52e3",
+            "com.docker.compose.project": "wordpress",
+            "com.docker.compose.version": "5.1.0",
+            "com.docker.compose.volume": "wp_data"
+        },
+        "Mountpoint": "/var/lib/docker/volumes/wordpress_wp_data/_data",
+        "Name": "wordpress_wp_data",
+        "Options": null,
+        "Scope": "local"
+    }
+]
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13[00m$ [7msudo ls -lh /var/lib/docker/volumes/word[27m[7mp[27m[7mress_wp_data/_data/[27m[A]0;asd@DESKTOP-GG23J57: ~/linux/week13[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13[00m$ sudo ls -lh /var/lib/docker/volumes/wordpress_wp_data/_data/
+[?2004ltotal 252K
+-rw-r--r--  1 www-data www-data  405 Feb  6  2020 index.php
+-rw-r--r--  1 www-data www-data  20K Mar  6  2025 license.txt
+-rw-r--r--  1 www-data www-data 7.3K Jul  8  2025 readme.html
+-rw-r--r--  1 www-data www-data 7.2K Oct  8  2025 wp-activate.php
+drwxr-xr-x  9 www-data www-data 4.0K Mar 11 23:28 wp-admin
+-rw-r--r--  1 www-data www-data  351 Feb  6  2020 wp-blog-header.php
+-rw-r--r--  1 www-data www-data 2.3K Jun 14  2023 wp-comments-post.php
+-rw-r--r--  1 www-data www-data 5.7K May  9 05:22 wp-config-docker.php
+-rw-r--r--  1 www-data www-data 3.3K Aug 12  2025 wp-config-sample.php
+-rw-r--r--  1 www-data www-data 5.8K May 15 10:29 wp-config.php
+drwxr-xr-x  8 www-data www-data 4.0K May 29 10:21 wp-content
+-rw-r--r--  1 www-data www-data 5.5K Aug  3  2024 wp-cron.php
+drwxr-xr-x 31 www-data www-data  16K Mar 11 23:28 wp-includes
+-rw-r--r--  1 www-data www-data 2.5K Apr 30  2025 wp-links-opml.php
+-rw-r--r--  1 www-data www-data 3.9K Mar 11  2024 wp-load.php
+-rw-r--r--  1 www-data www-data  51K Oct 29  2025 wp-login.php
+-rw-r--r--  1 www-data www-data 8.6K Apr  3  2025 wp-mail.php
+-rw-r--r--  1 www-data www-data  31K Nov  7  2025 wp-settings.php
+-rw-r--r--  1 www-data www-data  34K Mar 11  2025 wp-signup.php
+-rw-r--r--  1 www-data www-data 5.1K Aug 19  2025 wp-trackback.php
+-rw-r--r--  1 www-data www-data 3.2K Nov  9  2024 xmlrpc.php
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13[00m$ [7msudo du -sh /var/lib/docker/volumes/word[27m[7mp[27m[7mress_wp_data/_data/[27m[A]0;asd@DESKTOP-GG23J57: ~/linux/week13[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13[00m$ sudo du -sh /var/lib/docker/volumes/wordpress_wp_data/_data/
+[?2004l87M	/var/lib/docker/volumes/wordpress_wp_data/_data/
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13[00m$ Lindarang[K[K[K[K[K[K[K[K[KOpus[K[K[K[KNA[K[KNaem[K[K[K[KNa[K[KNemoSlime[K[Kme[K[K[K[K[K[K[K[K[KNesl[K[K[K[Knem[K[K[KNemoSlime[K[K[K[K[K[K[K[K[Ksudo restic -r ~[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd ~
+[?2004l[?2004h]0;asd@DESKTOP-GG23J57: ~[01;32masd@DESKTOP-GG23J57[00m:[01;34m~[00m$ ls
+[?2004l[0m[01;32mSCRIPT.sh[0m  asdf  [01;34mlinux[0m  [01;34mweek13[0m
+[?2004h]0;asd@DESKTOP-GG23J57: ~[01;32masd@DESKTOP-GG23J57[00m:[01;34m~[00m$ rmw[Kdir week13
+[?2004lrmdir: failed to remove 'week13': Directory not empty
+[?2004h]0;asd@DESKTOP-GG23J57: ~[01;32masd@DESKTOP-GG23J57[00m:[01;34m~[00m$ cd week13
+[?2004l[?2004h]0;asd@DESKTOP-GG23J57: ~/week13[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/week13[00m$ ls
+[?2004l[0m[01;34mbackup[0m  [01;34mrestore[0m
+[?2004h]0;asd@DESKTOP-GG23J57: ~/week13[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/week13[00m$ cd ..
+[?2004l[?2004h]0;asd@DESKTOP-GG23J57: ~[01;32masd@DESKTOP-GG23J57[00m:[01;34m~[00m$ re[Kmdir -r [Km [K[K[Krf[K[K[K[K[K[K[K[K[Kcd linux/week13
+[?2004l[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13[00m$ ls
+[?2004l[0m[01;34mbackup[0m  [01;34mrestic-repo[0m  [01;34mrestore[0m
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13[00m$ [7msudo restic -r ~/week13/restic-repo back[27m[7mu[27m[7mp [27m
+[7m/var/lib/docker/volumes/wordpress_wp_data/_data --tag wp_files --[27m
+[7mtag week13[27m[A[A[A]0;asd@DESKTOP-GG23J57: ~/linux/week13[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13[00m$ sudo restic -r ~/week13/restic-repo backup
+/var/lib/docker/volumes/wordpress_wp_data/_data --tag wp_files --
+tag week13[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C
+[C[A[C[C/var/lib/docker/volumes/wordpress_wp_data/_data --tag wp_files --
+tag week13[K
+[K[A[A[C[C[1@ [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clweek13/restic-repo back[1@u[A]0;asd@DESKTOP-GG23J57: ~/linux/week13[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ciweek13/restic-repo bac[1@k[A]0;asd@DESKTOP-GG23J57: ~/linux/week13[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnweek13/restic-repo ba[1@c[A]0;asd@DESKTOP-GG23J57: ~/linux/week13[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cuweek13/restic-repo b[1@a[A]0;asd@DESKTOP-GG23J57: ~/linux/week13[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cxweek13/restic-repo [1@b[A]0;asd@DESKTOP-GG23J57: ~/linux/week13[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/week13/restic-repo[1@ [A]0;asd@DESKTOP-GG23J57: ~/linux/week13[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C
+[?2004lenter password for repository: 
+[2Krepository 2ff72554 opened (version 2, compression level auto)
+[2Kcreated new cache in /root/.cache/restic
+[2Kno parent snapshot found, will read all files
+
+[2K[0:00]          0 index files loaded[2K[0:00] 0 files 0 B, total 1089 files 27.020 MiB, 0 errors
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/.htaccess
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/index.php[1A[1A[2K[0:00] 4 files 34.515 KiB, total 2043 files 31.314 MiB, 0 errors
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-activate.php
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-admin/about.php[1A[1A[2K[0:00] 22 files 342.381 KiB, total 3065 files 68.231 MiB, 0 errors
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-admin/css/admin-menu-rt
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-admin/css/code-editor-r[1A[1A[2K[0:00] 1.22%  67 files 959.117 KiB, total 3425 files 76.764 MiB, 0 errors 
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-admin/css/colors/ocean/
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-admin/css/colors/sunris[1A[1A[2K[0:00] 2.50%  101 files 1.918 MiB, total 3425 files 76.764 MiB, 0 errors E
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-admin/css/farbtastic-rt
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-admin/css/farbtastic.cs[1A[1A[2K[0:00] 3.47%  151 files 2.667 MiB, total 3425 files 76.764 MiB, 0 errors E
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-admin/css/widgets.css
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-admin/css/widgets.min.c[1A[1A[2K[0:00] 4.11%  208 files 3.158 MiB, total 3425 files 76.764 MiB, 0 errors E
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-admin/images/icons32.pn
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-admin/images/imgedit-ic[1A[1A[2K[0:00] 4.97%  272 files 3.818 MiB, total 3425 files 76.764 MiB, 0 errors E
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-admin/includes/class-pl
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-admin/includes/class-th[1A[1A[2K[0:00] 6.30%  319 files 4.837 MiB, total 3425 files 76.764 MiB, 0 errors E
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-admin/includes/continen
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-admin/includes/credits.[1A[1A[2K[0:00] 8.18%  365 files 6.282 MiB, total 3425 files 76.764 MiB, 0 errors E
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-admin/js/auth-app.js
+[2K[1A[1A[2K[0:00] 9.76%  415 files 7.489 MiB, total 3425 files 76.764 MiB, 0 errors E
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-admin/js/password-stren
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-admin/js/password-toggl[1A[1A[2K[0:00] 10.66%  474 files 8.182 MiB, total 3425 files 76.764 MiB, 0 errors 
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-admin/link-add.php
+[2K[1A[1A[2K[0:00] 11.18%  540 files 8.582 MiB, total 3425 files 76.764 MiB, 0 errors 
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-admin/post.php[1A[2K[0:00] 13.12%  584 files 10.069 MiB, total 3425 files 76.764 MiB, 0 errors
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-content/languages/admin
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-content/languages/admin[1A[1A[2K[0:00] 14.39%  624 files 11.046 MiB, total 3425 files 76.764 MiB, 0 errors
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-content/languages/ko_KR
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-content/languages/ko_KR[1A[1A[2K[0:00] 17.08%  661 files 13.110 MiB, total 3425 files 76.764 MiB, 0 errors
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-content/plugins/akismet
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-content/plugins/akismet[1A[1A[2K[0:00] 17.83%  697 files 13.687 MiB, total 3425 files 76.764 MiB, 0 errors
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-content/themes/twentytw
+[2K[1A[1A[2K[0:00] 20.53%  706 files 15.756 MiB, total 3425 files 76.764 MiB, 0 errors
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-content/themes/twentytw[1A[2K[0:00] 22.89%  727 files 17.569 MiB, total 3425 files 76.764 MiB, 0 errors
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-content/themes/twentytw
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-content/themes/twentytw[1A[1A[2K[0:00] 25.48%  756 files 19.556 MiB, total 3425 files 76.764 MiB, 0 errors
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-content/themes/twentytw
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-content/themes/twentytw[1A[1A[2K[0:00] 27.11%  794 files 20.808 MiB, total 3425 files 76.764 MiB, 0 errors
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-content/themes/twentytw
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-content/themes/twentytw[1A[1A[2K[0:00] 27.30%  839 files 20.958 MiB, total 3425 files 76.764 MiB, 0 errors
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-content/themes/twentytw
+[2K[1A[1A[2K[0:00] 27.52%  888 files 21.126 MiB, total 3425 files 76.764 MiB, 0 errors
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-content/themes/twentytw
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-content/themes/twentytw[1A[1A[2K[0:00] 27.99%  930 files 21.483 MiB, total 3425 files 76.764 MiB, 0 errors
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-content/themes/twentytw
+[2K[1A[1A[2K[0:00] 30.71%  950 files 23.574 MiB, total 3425 files 76.764 MiB, 0 errors
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-content/themes/twentytw[1A[2K[0:00] 30.87%  1008 files 23.698 MiB, total 3425 files 76.764 MiB, 0 error
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-content/themes/twentytw[1A[2K[0:00] 32.25%  1047 files 24.755 MiB, total 3425 files 76.764 MiB, 0 error
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-content/themes/twentytw
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-content/themes/twentytw[1A[1A[2K[0:00] 35.20%  1086 files 27.020 MiB, total 3425 files 76.764 MiB, 0 error
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-content/themes/twentytw
+[2K[1A[1A[2K[0:00] 36.73%  1124 files 28.199 MiB, total 3425 files 76.764 MiB, 0 error
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/PHPMailer/PHPM
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/PHPMailer/POP3[1A[1A[2K[0:00] 37.12%  1175 files 28.498 MiB, total 3425 files 76.764 MiB, 0 error
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/Requests/src/H
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/Requests/src/I[1A[1A[2K[0:00] 37.37%  1219 files 28.685 MiB, total 3425 files 76.764 MiB, 0 error
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/SimplePie/libr
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/SimplePie/libr[1A[1A[2K[0:00] 37.80%  1261 files 29.018 MiB, total 3425 files 76.764 MiB, 0 error
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/SimplePie/src/
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/SimplePie/src/[1A[1A[2K[0:00] 38.48%  1289 files 29.537 MiB, total 3425 files 76.764 MiB, 0 error
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/assets/script-
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/assets/script-[1A[1A[2K[0:00] 38.89%  1342 files 29.857 MiB, total 3425 files 76.764 MiB, 0 error
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/blocks/accordi
+[2K[1A[1A[2K[0:00] 38.94%  1394 files 29.892 MiB, total 3425 files 76.764 MiB, 0 error
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/blocks/blocks-
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/blocks/button/[1A[1A[2K[0:00] 39.27%  1444 files 30.147 MiB, total 3425 files 76.764 MiB, 0 error
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/blocks/columns
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/blocks/columns[1A[1A[2K[0:00] 39.35%  1496 files 30.207 MiB, total 3425 files 76.764 MiB, 0 error
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/blocks/comment
+[2K[1A[1A[2K[0:00] 39.51%  1546 files 30.326 MiB, total 3425 files 76.764 MiB, 0 error
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/blocks/embed/e[1A[2K[0:00] 39.71%  1600 files 30.480 MiB, total 3425 files 76.764 MiB, 0 error
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/blocks/group/s
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/blocks/group/s[1A[1A[2K[0:00] 39.85%  1647 files 30.588 MiB, total 3425 files 76.764 MiB, 0 error
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/blocks/latest-
+[2K[1A[1A[2K[0:00] 39.94%  1697 files 30.657 MiB, total 3425 files 76.764 MiB, 0 error
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/blocks/navigat
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/blocks/navigat[1A[1A[2K[0:00] 40.23%  1744 files 30.881 MiB, total 3425 files 76.764 MiB, 0 error
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/blocks/paragra
+[2K[1A[1A[2K[0:00] 40.28%  1794 files 30.918 MiB, total 3425 files 76.764 MiB, 0 error
+[2K[1A[2K[0:00] 40.38%  1842 files 30.997 MiB, total 3425 files 76.764 MiB, 0 error
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/blocks/post-te[1A[2K[0:00] 40.44%  1895 files 31.044 MiB, total 3425 files 76.764 MiB, 0 error
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/blocks/query-p
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/blocks/query-p[1A[1A[2K[0:01] 40.51%  1946 files 31.100 MiB, total 3425 files 76.764 MiB, 0 error
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/blocks/search/
+[2K[1A[1A[2K[0:01] 40.61%  2000 files 31.173 MiB, total 3425 files 76.764 MiB, 0 error
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/blocks/site-ta[1A[2K[0:01] 40.81%  2049 files 31.330 MiB, total 3425 files 76.764 MiB, 0 error
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/blocks/table/t[1A[2K[0:01] 40.86%  2099 files 31.369 MiB, total 3425 files 76.764 MiB, 0 error
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/blocks/terms-q
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/blocks/text-co[1A[1A[2K[0:01] 41.67%  2142 files 31.985 MiB, total 3425 files 76.764 MiB, 0 error
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/class-oembed.p
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/class-phpass.p[1A[1A[2K[0:01] 42.61%  2185 files 32.710 MiB, total 3425 files 76.764 MiB, 0 error
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/class-wp-custo
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/class-wp-date-[1A[1A[2K[0:01] 43.71%  2232 files 33.553 MiB, total 3425 files 76.764 MiB, 0 error
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/class-wp-recov
+[2K[1A[1A[2K[0:01] 45.12%  2270 files 34.639 MiB, total 3425 files 76.764 MiB, 0 error
+[2K[1A[2K[0:01] 46.51%  2318 files 35.704 MiB, total 3425 files 76.764 MiB, 0 error
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/css/dist/block
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/css/dist/block[1A[1A[2K[0:01] 48.27%  2364 files 37.057 MiB, total 3425 files 76.764 MiB, 0 error
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/css/dist/edit-
+[2K[1A[1A[2K[0:01] 49.84%  2416 files 38.257 MiB, total 3425 files 76.764 MiB, 0 error
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/css/dist/widge
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/css/editor-rtl[1A[1A[2K[0:01] 50.55%  2478 files 38.801 MiB, total 3425 files 76.764 MiB, 0 error
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/customize/clas
+[2K[1A[1A[2K[0:01] 52.83%  2515 files 40.553 MiB, total 3425 files 76.764 MiB, 0 error
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/html-api/class[1A[2K[0:01] 53.22%  2574 files 40.852 MiB, total 3425 files 76.764 MiB, 0 error
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/images/smilies
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/images/smilies[1A[1A[2K[0:01] 2632 files 42.459 MiB, total 3425 files 76.764 MiB, 0 errors
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/js/customize-b
+[2K[1A[1A[2K[0:01] 2669 files 42.813 MiB, total 3425 files 76.764 MiB, 0 errors
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/js/dist/block-
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/js/dist/block-[1A[1A[2K[0:01] 2671 files 48.047 MiB, total 3425 files 76.764 MiB, 0 errors
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/js/dist/block-
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/js/dist/comman[1A[1A[2K[0:01] 2674 files 50.599 MiB, total 3425 files 76.764 MiB, 0 errors
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/js/dist/compon
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/js/dist/compos[1A[1A[2K[0:01] 2688 files 54.457 MiB, total 3425 files 76.764 MiB, 0 errors
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/js/dist/date.j
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/js/dist/deprec[1A[1A[2K[0:01] 2705 files 56.276 MiB, total 3425 files 76.764 MiB, 0 errors
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/js/dist/edit-s
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/js/dist/edit-w[1A[1A[2K[0:01] 2707 files 56.481 MiB, total 3425 files 76.764 MiB, 0 errors
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/js/dist/edit-s
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/js/dist/editor[1A[1A[2K[0:01] 2738 files 60.802 MiB, total 3425 files 76.764 MiB, 0 errors
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/js/dist/prefer
+[2K[1A[1A[2K[0:01] 2795 files 62.399 MiB, total 3425 files 76.764 MiB, 0 errors
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/js/dist/vendor[1A[2K[0:01] 2843 files 64.276 MiB, total 3425 files 76.764 MiB, 0 errors
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/js/imgareasele
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/js/imgareasele[1A[1A[2K[0:01] 2902 files 65.233 MiB, total 3425 files 76.764 MiB, 0 errors
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/js/jquery/ui/e
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/js/jquery/ui/e[1A[1A[2K[0:01] 2958 files 66.587 MiB, total 3425 files 76.764 MiB, 0 errors
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/js/mediaelemen
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/js/mediaelemen[1A[1A[2K[0:01] 3013 files 67.515 MiB, total 3425 files 76.764 MiB, 0 errors
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/js/tinymce/plu
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/js/tinymce/plu[1A[1A[2K[0:01] 3063 files 68.231 MiB, total 3425 files 76.764 MiB, 0 errors
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/js/tinymce/ski
+[2K[1A[1A[2K[0:01] 3098 files 70.339 MiB, total 3425 files 76.764 MiB, 0 errors
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/js/wp-api.min.[1A[2K[0:01] 3140 files 70.648 MiB, total 3425 files 76.764 MiB, 0 errors
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/js/zxcvbn.min.
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/l10n.php[1A[1A[2K[0:01] 3175 files 73.038 MiB, total 3425 files 76.764 MiB, 0 errors
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/registration.p
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/rest-api/class[1A[1A[2K[0:01] 3214 files 73.779 MiB, total 3425 files 76.764 MiB, 0 errors
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/rest-api/endpo
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/rest-api/endpo[1A[1A[2K[0:01] 3246 files 74.407 MiB, total 3425 files 76.764 MiB, 0 errors
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/sitemaps/class
+[2K[1A[1A[2K[0:01] 3279 files 74.534 MiB, total 3425 files 76.764 MiB, 0 errors
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/sodium_compat/
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/sodium_compat/[1A[1A[2K[0:01] 3321 files 75.117 MiB, total 3425 files 76.764 MiB, 0 errors
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/sodium_compat/
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/sodium_compat/[1A[1A[2K[0:01] 3366 files 75.774 MiB, total 3425 files 76.764 MiB, 0 errors
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/style-engine/c
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/style-engine/c[1A[1A[2K[0:01] 3409 files 76.534 MiB, total 3425 files 76.764 MiB, 0 errors
+[2K/var/lib/docker/volumes/wordpress_wp_data/_data/wp-includes/widgets/class-
+[2K[1A[1A[2K[0:01] 3425 files 76.764 MiB, total 3425 files 76.764 MiB, 0 errors
+[2K[1A[2K[0:01] 3425 files 76.764 MiB, total 3425 files 76.764 MiB, 0 errors[2K[0:01] 3425 files 76.764 MiB, total 3425 files 76.764 MiB, 0 errors[2K[0:01] 3425 files 76.764 MiB, total 3425 files 76.764 MiB, 0 errors[2K[0:01] 3425 files 76.764 MiB, total 3425 files 76.764 MiB, 0 errors[2K[0:01] 3425 files 76.764 MiB, total 3425 files 76.764 MiB, 0 errors[2K[2K
+[2K[2KFiles:        3425 new,     0 changed,     0 unmodified
+[2K[2KDirs:          371 new,     0 changed,     0 unmodified
+[2K[2KAdded to the repository: 77.825 MiB (29.415 MiB stored)
+[2K[2K
+[2K[2Kprocessed 3425 files, 76.764 MiB in 0:01
+[2K[2Ksnapshot 941c7481 saved
+[2K[2K
+[1ACommand 'tag' not found, but there are 16 similar ones.
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13[00m$ [7msudo restic -r ~/week13/restic-repo snap[27m[7ms[27m[7mhots[27m[A]0;asd@DESKTOP-GG23J57: ~/linux/week13[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13[00m$ sudo restic -r ~/week13/restic-repo snapshots
+[?2004lFatal: unable to open config file: stat /home/asd/week13/restic-repo/config: no such file or directory
+Is there a repository at the following location?
+/home/asd/week13/restic-repo
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13[00m$ [7msudo restic -r ~/linux/week13/restic-rep[27m[7mo[27m[7m snapshots[27m[A]0;asd@DESKTOP-GG23J57: ~/linux/week13[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13[00m$ sudo restic -r ~/linux/week13/restic-repo snapshots
+[?2004lenter password for repository: 
+repository 2ff72554 opened (version 2, compression level auto)
+ID        Time                 Host             Tags        Paths
+-----------------------------------------------------------------------------------------------------------
+941c7481  2026-06-05 09:45:51  DESKTOP-GG23J57  wp_files    /var/lib/docker/volumes/wordpress_wp_data/_data
+-----------------------------------------------------------------------------------------------------------
+1 snapshots
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13[00m$ [7m# 941c7481 스냅샷에 week13 태그 마저 달 [27m[K[7m아[27m[7m주기 [27m
+[7msudo restic -r ~/linux/week13/restic-repo tag --add week13 941c7481[27m[A[A# 941c7481 스냅샷에 week13 태그 마저 달 [K아주기
+sudo restic -r ~/linux/week13/restic-repo tag --add week13 941c7481[A[C[C[C[C[C[C    [A]0;asd@DESKTOP-GG23J57: ~/linux/week13[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C sudo restic -r ~/linux/week13/restic-repo tag --add week13 941c7481
+[K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C                                       sudo restic -r ~/linux/week13/restic-repo[40P[A]0;asd@DESKTOP-GG23J57: ~/linux/week13[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13[00m$ 
+
+[?2004lenter password for repository: 
+repository 2ff72554 opened (version 2, compression level auto)
+create exclusive lock for repository
+modified tags on 1 snapshots
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13[00m$ sudo restic -r ~/linux/week13/restic-repo tag --add week13 941c7481[C[C[16Psnapshots
+[?2004lenter password for repository: 
+repository 2ff72554 opened (version 2, compression level auto)
+ID        Time                 Host             Tags             Paths
+----------------------------------------------------------------------------------------------------------------
+aff31e35  2026-06-05 09:45:51  DESKTOP-GG23J57  wp_files,week13  /var/lib/docker/volumes/wordpress_wp_data/_data
+----------------------------------------------------------------------------------------------------------------
+1 snapshots
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13[00m$ [7msudo restic -r ~/week13/restic-repo stat[27m[7ms[27m[A]0;asd@DESKTOP-GG23J57: ~/linux/week13[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13[00m$ sudo restic -r ~/week13/restic-repo stats
+[?2004lFatal: unable to open config file: stat /home/asd/week13/restic-repo/config: no such file or directory
+Is there a repository at the following location?
+/home/asd/week13/restic-repo
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13[00m$ sudo restic -r ~/week13/restic-repo stats[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clweek13/restic-repo stats[A]0;asd@DESKTOP-GG23J57: ~/linux/week13[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ciweek13/restic-repo stats[A]0;asd@DESKTOP-GG23J57: ~/linux/week13[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnweek13/restic-repo stats[A]0;asd@DESKTOP-GG23J57: ~/linux/week13[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cuweek13/restic-repo stats[A]0;asd@DESKTOP-GG23J57: ~/linux/week13[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cxweek13/restic-repo stats[A]0;asd@DESKTOP-GG23J57: ~/linux/week13[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/week13/restic-repo stats[A]0;asd@DESKTOP-GG23J57: ~/linux/week13[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+[?2004lenter password for repository: 
+repository 2ff72554 opened (version 2, compression level auto)
+[2K[0:00] 0.00%  0 / 1 index files loaded[2K[0:00] 100.00%  1 / 1 index files loaded
+scanning...
+Stats in restore-size mode:
+     Snapshots processed:  1
+        Total File Count:  3796
+              Total Size:  76.764 MiB
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13[00m$ cd[K[Kls
+[?2004l[0m[01;34mbackup[0m  [01;34mrestic-repo[0m  [01;34mrestore[0m
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13[00m$ cd restic-repo/
+[?2004l[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo[00m$ ls
+[?2004lconfig  [0m[01;34mdata[0m  [01;34mindex[0m  [01;34mkeys[0m  [01;34mlocks[0m  [01;34msnapshots[0m
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo[00m$ cd snapshots/
+[?2004l[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$ ls
+[?2004laff31e35a3fe5c5370e356a96987e458543ef3c8e3d1f66e5a32b292c78d47a5
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$ [7msudo restic -r ~/w[27m[7me[27m[7mek13/restic-repo backup [27m
+[7m/var/lib/docker/volumes/wordpress_wp_data/_data --tag wp_files[27m[A[Asudo restic -r ~/week13/restic-repo backup
+/var/lib/docker/volumes/wordpress_wp_data/_data --tag wp_files[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/w[C[1@e[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cl/[1@w[1@i[1@n[1@u[1@x
+
+[?2004l[sudo] password for asd: 
+Sorry, try again.
+[sudo] password for asd: 
+Fatal: nothing to backup, please specify target files/dirs
+bash: /var/lib/docker/volumes/wordpress_wp_data/_data: Permission denied
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$ /var/lib/docker/volumes/wordpress_wp_data/_data --tag wp_files[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$ sudo restic -r ~/li[14Pnux/week13/restic-repo backup[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$ /var/lib/docker/volumes/wordpress_wp_data/_data --tag wp_files[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$ sudo restic -r ~/li[14Pnux/week13/restic-repo backup[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$ /var/lib/docker/volumes/wordpress_wp_data/_data --tag wp_files[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksudo restic -r ~/linux/week13/restic-repo backup[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$ [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7msudo restic -r ~/w[27m[7me[27m[7mek13/restic-repo backup [27m
+[7m/var/lib/docker/volumes/wordpress_wp_data/_data --tag wp_files[27m[A[Asudo restic -r ~/week13/restic-repo backup
+/var/lib/docker/volumes/wordpress_wp_data/_data --tag wp_files[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/w[C[1@e[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cl/[1@w[1@i[1@n[1@u[1@x
+
+[?2004lFatal: nothing to backup, please specify target files/dirs
+bash: /var/lib/docker/volumes/wordpress_wp_data/_data: Permission denied
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$ /var/lib/docker/volumes/wordpress_wp_data/_data --tag wp_files[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$ sudo restic -r ~/li[14Pnux/week13/restic-repo backup[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksudo restic -r ~/l inux/week13/restic-repo backup /varlib[K[K[K/lib/docker/volumes/wordpress_[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[7msudo restic -r ~/l[27m[7mi[27m[7mnux/week13/restic-repo backup /var/lib/docker/volumes/wordpress_wp_data/_da[27m[7mt[27m[7ma --tag wp_files[27m[A[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$ sudo restic -r ~/linux/week13/restic-repo backup /var/lib/docker/volumes/wordpress_wp_data/_data --tag wp_files
+[?2004lenter password for repository: 
+[2Krepository 2ff72554 opened (version 2, compression level auto)
+[2Kusing parent snapshot aff31e35
+[2K[0:00] 0.00%  0 / 1 index files loaded[2K[0:00] 0.00%  0 / 1 index files loaded[2K[0:00] 0.00%  0 / 1 index files loaded
+[2K[0:00] 100.00%  1 / 1 index files loaded[2K[0:00] 5 files 34.515 KiB, total 205 files 3.102 MiB, 0 errors[2K[0:00] 36 files 387.660 KiB, total 845 files 20.963 MiB, 0 errors[2K[0:00] 241 files 3.238 MiB, total 1261 files 28.893 MiB, 0 errors[2K[0:00] 421 files 7.492 MiB, total 1901 files 31.051 MiB, 0 errors[2K[0:00] 666 files 13.116 MiB, total 2721 files 59.916 MiB, 0 errors[2K[0:00] 746 files 19.025 MiB, total 3237 files 74.155 MiB, 0 errors[2K[0:00] 1040 files 24.491 MiB, total 3425 files 76.764 MiB, 0 errors[2K[0:00] 1129 files 28.443 MiB, total 3425 files 76.764 MiB, 0 errors[2K[0:00] 1336 files 29.851 MiB, total 3425 files 76.764 MiB, 0 errors[2K[0:00] 1506 files 30.213 MiB, total 3425 files 76.764 MiB, 0 errors[2K[0:00] 1739 files 30.865 MiB, total 3425 files 76.764 MiB, 0 errors[2K[0:00] 1938 files 31.092 MiB, total 3425 files 76.764 MiB, 0 errors[2K[0:00] 2444 files 38.635 MiB, total 3425 files 76.764 MiB, 0 errors[2K[0:00] 2973 files 66.848 MiB, total 3425 files 76.764 MiB, 0 errors[2K[0:00] 3226 files 73.992 MiB, total 3425 files 76.764 MiB, 0 errors[2K[0:00] 3297 files 74.707 MiB, total 3425 files 76.764 MiB, 0 errors[2K[0:00] 3425 files 76.764 MiB, total 3425 files 76.764 MiB, 0 errors[2K[0:00] 3425 files 76.764 MiB, total 3425 files 76.764 MiB, 0 errors[2K[0:00] 3425 files 76.764 MiB, total 3425 files 76.764 MiB, 0 errors[2K[2K
+[2K[2KFiles:           0 new,     0 changed,  3425 unmodified
+[2K[2KDirs:            0 new,     0 changed,   371 unmodified
+[2K[2KAdded to the repository: 0 B   (0 B   stored)
+[2K[2K
+[2K[2Kprocessed 3425 files, 76.764 MiB in 0:00
+[2K[2Ksnapshot 7897698d saved
+[2K[2K
+[1A[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$ sudo restic -r ~li [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K~/l inux/week13/restic-repo backup /var/lib/docker/volumes/wordpress_wp_data/_data --tag wp_files[A[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$ /var/lib/docker/vol[32Pumes/wordpress_wp_data/_data --tag wp_files
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$ sudo restic -r ~/li[14Pnux/week13/restic-repo backup[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[7m sudo restic -r ~/[27m[7ml[27m[7minux/week13/restic-repo snapshots[27m[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$  sudo restic -r ~/linux/week13/restic-repo snapshots
+[?2004lenter password for repository: 
+repository 2ff72554 opened (version 2, compression level auto)
+ID        Time                 Host             Tags             Paths
+----------------------------------------------------------------------------------------------------------------
+aff31e35  2026-06-05 09:45:51  DESKTOP-GG23J57  wp_files,week13  /var/lib/docker/volumes/wordpress_wp_data/_data
+7897698d  2026-06-05 10:14:47  DESKTOP-GG23J57  wp_files         /var/lib/docker/volumes/wordpress_wp_data/_data
+----------------------------------------------------------------------------------------------------------------
+2 snapshots
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$ sudo restic -r ~/linux/week13/restic-repo backup /var/lib/docker/volumes/wordpress_wp_data/_data --tag wp_files
+[?2004lenter password for repository: 
+[2Krepository 2ff72554 opened (version 2, compression level auto)
+[2Kusing parent snapshot 7897698d
+[2K[0:00] 100.00%  1 / 1 index files loaded
+[2K[0:00] 100.00%  1 / 1 index files loaded[2K[0:00] 17 files 121.109 KiB, total 378 files 6.402 MiB, 0 errors[2K[0:00] 364 files 6.269 MiB, total 1581 files 30.392 MiB, 0 errors[2K[0:00] 697 files 13.418 MiB, total 2837 files 64.229 MiB, 0 errors[2K[0:00] 1093 files 27.042 MiB, total 3425 files 76.764 MiB, 0 errors[2K[0:00] 1434 files 30.143 MiB, total 3425 files 76.764 MiB, 0 errors[2K[0:00] 1978 files 31.146 MiB, total 3425 files 76.764 MiB, 0 errors[2K[0:00] 2611 files 40.976 MiB, total 3425 files 76.764 MiB, 0 errors[2K[0:00] 3233 files 74.023 MiB, total 3425 files 76.764 MiB, 0 errors[2K[0:00] 3425 files 76.764 MiB, total 3425 files 76.764 MiB, 0 errors[2K[2K
+[2K[2KFiles:           0 new,     0 changed,  3425 unmodified
+[2K[2KDirs:            0 new,     0 changed,   371 unmodified
+[2K[2KAdded to the repository: 0 B   (0 B   stored)
+[2K[2K
+[2K[2Kprocessed 3425 files, 76.764 MiB in 0:00
+[2K[2Ksnapshot 5671891a saved
+[2K[2K
+[1A[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$ sudo restic -r ~/linux/week13/restic-repo backup /var/lib/docker/volumes/wordpress_wp_data/_data --tag wp_files[A[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$ /var/lib/docker/vol[32Pumes/wordpress_wp_data/_data --tag wp_files
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lbash: /var/lib/docker/volumes/wordpress_wp_data/_data: Permission denied
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$ [7mudo restic -r ~/li[27m[7mn[27m[7mux/week13/restic-repo snapshots[27m[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$ udo restic -r ~/linux/week13/restic-repo snapshots[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo restic -r ~/li[1@n[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$ [C
+
+[?2004lenter password for repository: 
+repository 2ff72554 opened (version 2, compression level auto)
+ID        Time                 Host             Tags             Paths
+----------------------------------------------------------------------------------------------------------------
+aff31e35  2026-06-05 09:45:51  DESKTOP-GG23J57  wp_files,week13  /var/lib/docker/volumes/wordpress_wp_data/_data
+7897698d  2026-06-05 10:14:47  DESKTOP-GG23J57  wp_files         /var/lib/docker/volumes/wordpress_wp_data/_data
+5671891a  2026-06-05 10:18:07  DESKTOP-GG23J57  wp_files         /var/lib/docker/volumes/wordpress_wp_data/_data
+----------------------------------------------------------------------------------------------------------------
+3 snapshots
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$ [7msudo restic -r ~/l[27m[7mi[27m[7mnux/week13/restic-repo forget 5671891a --prune[27m[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$ sudo restic -r ~/linux/week13/restic-repo forget 5671891a --prune
+[?2004lenter password for repository: 
+repository 2ff72554 opened (version 2, compression level auto)
+[2K[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+[2K[0:00] 0.00%  0 / 1 index files loaded[2K[0:00] 100.00%  1 / 1 index files loaded
+loading all snapshots...
+finding data that is still in use for 2 snapshots
+[2K[0:00] 50.00%  1 / 2 snapshots[2K[0:00] 50.00%  1 / 2 snapshots[2K[0:00] 50.00%  1 / 2 snapshots[2K[0:00] 100.00%  2 / 2 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[2K[0:00] 100.00%  3 / 3 packs processed
+
+to repack:             0 blobs / 0 B
+this removes:          0 blobs / 0 B
+to delete:             0 blobs / 0 B
+total prune:           0 blobs / 0 B
+remaining:          3561 blobs / 29.275 MiB
+unused size after prune: 0 B (0.00% of remaining size)
+
+done
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$ sudo restic -r ~/linux/week13/restic-repo forget 5671891a --prune[14Psnapshots
+[?2004lenter password for repository: 
+repository 2ff72554 opened (version 2, compression level auto)
+ID        Time                 Host             Tags             Paths
+----------------------------------------------------------------------------------------------------------------
+aff31e35  2026-06-05 09:45:51  DESKTOP-GG23J57  wp_files,week13  /var/lib/docker/volumes/wordpress_wp_data/_data
+7897698d  2026-06-05 10:14:47  DESKTOP-GG23J57  wp_files         /var/lib/docker/volumes/wordpress_wp_data/_data
+----------------------------------------------------------------------------------------------------------------
+2 snapshots
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$ [7mdocker exec wp_db [27m[7mm[27m[7mysql \ -u wpuser -pwppass_2026! wordpress \ -e [27m
+[7m"SELECT COUNT(*) FROM wp_posts;"[27m
+[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker exec wp_db mysql \ -u wpuser -pwppass_2026! wordpress \ -e
+"SELECT COUNT(*) FROM wp_posts;"[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C"SELECT COUNT(*) FROM wp_posts;"                             [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C "SELECT COUNT(*) FROM wp_posts;"[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -e "SELECT COUNT(*) FROM wp_posts[1P;"[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-e "SELECT COUNT(*) FROM wp_posts;[1P"[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+[?2004lmysql: [Warning] Using a password on the command line interface can be insecure.
+mysql  Ver 8.0.46 for Linux on x86_64 (MySQL Community Server - GPL)
+Copyright (c) 2000, 2026, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Usage: mysql [OPTIONS] [database]
+  -?, --help          Display this help and exit.
+  -I, --help          Synonym for -?
+  --auto-rehash       Enable automatic rehashing. One doesn't need to use
+                      'rehash' to get table and field completion, but startup
+                      and reconnecting may take a longer time. Disable with
+                      --disable-auto-rehash.
+                      (Defaults to on; use --skip-auto-rehash to disable.)
+  -A, --no-auto-rehash 
+                      No automatic rehashing. One has to use 'rehash' to get
+                      table and field completion. This gives a quicker start of
+                      mysql and disables rehashing on reconnect.
+  --auto-vertical-output 
+                      Automatically switch to vertical output mode if the
+                      result is wider than the terminal width.
+  -B, --batch         Don't use history file. Disable interactive behavior.
+                      (Enables --silent.)
+  --bind-address=name IP address to bind to.
+  --binary-as-hex     Print binary data as hex. Enabled by default for
+                      interactive terminals.
+  --character-sets-dir=name 
+                      Directory for character set files.
+  --column-type-info  Display column type information.
+  --commands          Enable or disable processing of local mysql commands.
+                      (Defaults to on; use --skip-commands to disable.)
+  -c, --comments      Preserve comments. Send comments to the server. The
+                      default is --skip-comments (discard comments), enable
+                      with --comments.
+  -C, --compress      Use compression in server/client protocol.
+  -#, --debug[=#]     This is a non-debug version. Catch this and exit.
+  --debug-check       This is a non-debug version. Catch this and exit.
+  -T, --debug-info    This is a non-debug version. Catch this and exit.
+  -D, --database=name Database to use.
+  --default-character-set=name 
+                      Set the default character set.
+  --delimiter=name    Delimiter to be used.
+  --enable-cleartext-plugin 
+                      Enable/disable the clear text authentication plugin.
+  -e, --execute=name  Execute command and quit. (Disables --force and history
+                      file.)
+  -E, --vertical      Print the output of a query (rows) vertically.
+  -f, --force         Continue even if we get an SQL error.
+  --histignore=name   A colon-separated list of patterns to keep statements
+                      from getting logged into syslog and mysql history.
+  -G, --named-commands 
+                      Enable named commands. Named commands mean this program's
+                      internal commands; see mysql> help . When enabled, the
+                      named commands can be used from any line of the query,
+                      otherwise only from the first line, before an enter.
+                      Disable with --disable-named-commands. This option is
+                      disabled by default.
+  -i, --ignore-spaces Ignore space after function names.
+  --init-command=name SQL Command to execute when connecting to MySQL server.
+                      Will automatically be re-executed when reconnecting.
+  --local-infile      Enable/disable LOAD DATA LOCAL INFILE.
+  -b, --no-beep       Turn off beep on error.
+  -h, --host=name     Connect to host.
+  --dns-srv-name=name Connect to a DNS SRV resource
+  -H, --html          Produce HTML output.
+  -X, --xml           Produce XML output.
+  --line-numbers      Write line numbers for errors.
+                      (Defaults to on; use --skip-line-numbers to disable.)
+  -L, --skip-line-numbers 
+                      Don't write line number for errors.
+  -n, --unbuffered    Flush buffer after each query.
+  --column-names      Write column names in results.
+                      (Defaults to on; use --skip-column-names to disable.)
+  -N, --skip-column-names 
+                      Don't write column names in results.
+  --sigint-ignore     Ignore SIGINT (CTRL-C).
+  -o, --one-database  Ignore statements except those that occur while the
+                      default database is the one named at the command line.
+  --pager[=name]      Pager to use to display results. If you don't supply an
+                      option, the default pager is taken from your ENV variable
+                      PAGER. Valid pagers are less, more, cat [> filename],
+                      etc. See interactive help (\h) also. This option does not
+                      work in batch mode. Disable with --disable-pager. This
+                      option is disabled by default.
+  -p, --password[=name] 
+                      Password to use when connecting to server. If password is
+                      not given it's asked from the tty.
+  -,, --password1[=name] 
+                      Password for first factor authentication plugin.
+  -,, --password2[=name] 
+                      Password for second factor authentication plugin.
+  -,, --password3[=name] 
+                      Password for third factor authentication plugin.
+  -P, --port=#        Port number to use for connection or 0 for default to, in
+                      order of preference, my.cnf, $MYSQL_TCP_PORT,
+                      /etc/services, built-in default (3306).
+  --prompt=name       Set the mysql prompt to this value.
+  --protocol=name     The protocol to use for connection (tcp, socket, pipe,
+                      memory).
+  -q, --quick         Don't cache result, print it row by row. This may slow
+                      down the server if the output is suspended. Doesn't use
+                      history file.
+  -r, --raw           Write fields without conversion. Used with --batch.
+  --reconnect         Reconnect if the connection is lost. Disable with
+                      --disable-reconnect. This option is enabled by default.
+                      (Defaults to on; use --skip-reconnect to disable.)
+  -s, --silent        Be more silent. Print results with a tab as separator,
+                      each row on new line.
+  -S, --socket=name   The socket file to use for connection.
+  --server-public-key-path=name 
+                      File path to the server public RSA key in PEM format.
+  --get-server-public-key 
+                      Get server public key
+  --ssl-mode=name     SSL connection mode.
+  --ssl-ca=name       CA file in PEM format.
+  --ssl-capath=name   CA directory.
+  --ssl-cert=name     X509 cert in PEM format.
+  --ssl-cipher=name   SSL cipher to use.
+  --ssl-key=name      X509 key in PEM format.
+  --ssl-crl=name      Certificate revocation list.
+  --ssl-crlpath=name  Certificate revocation list path.
+  --tls-version=name  TLS version to use, permitted values are: TLSv1.2,
+                      TLSv1.3
+  --ssl-fips-mode=name 
+                      SSL FIPS mode (applies only for OpenSSL); permitted
+                      values are: OFF, ON, STRICT
+  --tls-ciphersuites=name 
+                      TLS v1.3 cipher to use.
+  --ssl-session-data=name 
+                      Session data file to use to enable ssl session reuse
+  --ssl-session-data-continue-on-failed-reuse 
+                      If set to ON, this option will allow connection to
+                      succeed even if session data cannot be reused.
+  -t, --table         Output in table format.
+  --tee=name          Append everything into outfile. See interactive help (\h)
+                      also. Does not work in batch mode. Disable with
+                      --disable-tee. This option is disabled by default.
+  -u, --user=name     User for login if not current user.
+  -U, --safe-updates  Only allow UPDATE and DELETE that uses keys.
+  -U, --i-am-a-dummy  Synonym for option --safe-updates, -U.
+  -v, --verbose       Write more. (-v -v -v gives the table output format).
+  -V, --version       Output version information and exit.
+  -w, --wait          Wait and retry if connection is down.
+  --connect-timeout=# Number of seconds before connection timeout.
+  --max-allowed-packet=# 
+                      The maximum packet length to send to or receive from
+                      server.
+  --net-buffer-length=# 
+                      The buffer size for TCP/IP and socket communication.
+  --select-limit=#    Automatic limit for SELECT when using --safe-updates.
+  --max-join-size=#   Automatic limit for rows in a join when using
+                      --safe-updates.
+  --show-warnings     Show warnings after every statement.
+  -j, --syslog        Log filtered interactive commands to syslog. Filtering of
+                      commands depends on the patterns supplied via histignore
+                      option besides the default patterns.
+  --plugin-dir=name   Directory for client-side plugins.
+  --default-auth=name Default authentication client-side plugin to use.
+  --binary-mode       By default, ASCII '\0' is disallowed and '\r\n' is
+                      translated to '\n'. This switch turns off both features,
+                      and also turns off parsing of all clientcommands except
+                      \C and DELIMITER, in non-interactive mode (for input
+                      piped to mysql or loaded using the 'source' command).
+                      This is necessary when processing output from mysqlbinlog
+                      that may contain blobs.
+  --connect-expired-password 
+                      Notify the server that this client is prepared to handle
+                      expired password sandbox mode.
+  --network-namespace=name 
+                      Network namespace to use for connection via tcp with a
+                      server.
+  --compression-algorithms=name 
+                      Use compression algorithm in server/client protocol.
+                      Valid values are any combination of
+                      'zstd','zlib','uncompressed'.
+  --zstd-compression-level=# 
+                      Use this compression level in the client/server protocol,
+                      in case --compression-algorithms=zstd. Valid range is
+                      between 1 and 22, inclusive. Default is 3.
+  --load-data-local-dir=name 
+                      Directory path safe for LOAD DATA LOCAL INFILE to read
+                      from.
+  --fido-register-factor=name 
+                      Specifies authentication factor, for which registration
+                      needs to be done.
+  --authentication-oci-client-config-profile=name 
+                      Specifies the configuration profile whose configuration
+                      options are to be read from the OCI configuration file.
+                      Default is DEFAULT.
+  --oci-config-file=name 
+                      Specifies the location of the OCI configuration file.
+                      Default for Linux is ~/.oci/config and %HOME/.oci/config
+                      on Windows.
+  --system-command    Enable (by default) or disable the system mysql command.
+                      (Defaults to on; use --skip-system-command to disable.)
+
+Default options are read from the following files in the given order:
+/etc/my.cnf /etc/mysql/my.cnf /usr/etc/my.cnf ~/.my.cnf 
+The following groups are read: mysql client
+The following options may be given as the first argument:
+--print-defaults        Print the program argument list and exit.
+--no-defaults           Don't read default options from any option file,
+                        except for login file.
+--defaults-file=#       Only read default options from the given file #.
+--defaults-extra-file=# Read this file after the global files are read.
+--defaults-group-suffix=#
+                        Also read groups with concat(group, suffix)
+--login-path=#          Read this path from the login file.
+
+Variables (--variable-name=value)
+and boolean options {FALSE|TRUE}          Value (after reading options)
+----------------------------------------- --------------------------------
+auto-rehash                               TRUE
+auto-vertical-output                      FALSE
+bind-address                              (No default value)
+binary-as-hex                             FALSE
+character-sets-dir                        (No default value)
+column-type-info                          FALSE
+commands                                  TRUE
+comments                                  FALSE
+compress                                  FALSE
+database                                  (No default value)
+default-character-set                     auto
+delimiter                                 ;
+enable-cleartext-plugin                   FALSE
+vertical                                  FALSE
+force                                     FALSE
+histignore                                (No default value)
+named-commands                            FALSE
+ignore-spaces                             FALSE
+init-command                              (No default value)
+local-infile                              FALSE
+no-beep                                   FALSE
+host                                      (No default value)
+dns-srv-name                              (No default value)
+html                                      FALSE
+xml                                       FALSE
+line-numbers                              TRUE
+unbuffered                                FALSE
+column-names                              TRUE
+sigint-ignore                             FALSE
+port                                      0
+prompt                                    mysql> 
+quick                                     FALSE
+raw                                       FALSE
+reconnect                                 FALSE
+socket                                    /var/run/mysqld/mysqld.sock
+server-public-key-path                    (No default value)
+get-server-public-key                     FALSE
+ssl-ca                                    (No default value)
+ssl-capath                                (No default value)
+ssl-cert                                  (No default value)
+ssl-cipher                                (No default value)
+ssl-key                                   (No default value)
+ssl-crl                                   (No default value)
+ssl-crlpath                               (No default value)
+tls-version                               (No default value)
+tls-ciphersuites                          (No default value)
+ssl-session-data                          (No default value)
+ssl-session-data-continue-on-failed-reuse FALSE
+table                                     FALSE
+user                                      (No default value)
+safe-updates                              FALSE
+i-am-a-dummy                              FALSE
+connect-timeout                           0
+max-allowed-packet                        16777216
+net-buffer-length                         16384
+select-limit                              1000
+max-join-size                             1000000
+show-warnings                             FALSE
+plugin-dir                                (No default value)
+default-auth                              (No default value)
+binary-mode                               FALSE
+connect-expired-password                  FALSE
+network-namespace                         (No default value)
+compression-algorithms                    (No default value)
+zstd-compression-level                    3
+load-data-local-dir                       (No default value)
+fido-register-factor                      (No default value)
+authentication-oci-client-config-profile  (No default value)
+oci-config-file                           (No default value)
+system-command                            TRUE
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$ [7mdocker exec wp_db [27m[7mm[27m[7mysqldump[27m[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$ docker exec wp_db mysqldump --no-tablespaces [7m-u wpuser -pwppass_2026! wordpress[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-u wpuser -pwppass_2026! wordpress [7m| gzip[27m| gzip [7m> ~/wee[27m[7mk[27m[7m13/backup/db/db_$(date +%F).sql.gz[27m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C> ~/week13/backup/db/db_$(date +%F).sql.gz
+[?2004lmysqldump: [Warning] Using a password on the command line interface can be insecure.
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$ [7m# 백업 폴더에 파일[27m[7m이[27m[7m 잘 들어있는지, 용량은 얼마나 되는지 확인 [27m
+[7mls -lh ~/week13/backup/db/[27m[A[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$ # 백업 폴더에 파일이 잘 들어있는지, 용량은 얼마나 되는지 확인
+[1Pls -lh ~/week13/backup/db[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[7mls -lh ~/week13/ba[27m[7mc[27m[7mkup/db/[27m[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$ ls -lh ~/week13/backup/db/
+[?2004ltotal 344K
+-rw-r--r-- 1 asd asd 341K Jun  5 10:20 [0m[01;31mdb_2026-06-05.sql.gz[0m
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$ ls -lh ~/week13/backup/db/[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$ docker exec wp_db mysqldump --no-tablespaces -u wpuser -pwppass_2026! wordpress | gzip > ~/week13/backup/db/db_$(date +%F).sql.gz[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/wee[1@k[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cl/we[1@e[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci/w[C[1@e[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnu[3@x/w
+[?2004lmysqldump: [Warning] Using a password on the command line interface can be insecure.
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$ docker exec wp_db mysqldump --no-tablespaces -u wpuser -pwppass_2026! wordpress | gzip > ~/linux/week13/backup/db/db_$(date +%F).sql.gz[A[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$ ls -lh ~/week13/backup/db/[K
+[K[A[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/week13/backup/db/[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$ [C[C[C[C[C[C[C[C[Cl/week13/backup/db/[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$ [C[C[C[C[C[C[C[C[C[Ci/week13/backup/db/[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$ [C[C[C[C[C[C[C[C[C[C[Cnux/week13/backup/db/[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+[?2004ltotal 344K
+-rw-r--r-- 1 asd asd 341K Jun  5 10:23 [0m[01;31mdb_2026-06-05.sql.gz[0m
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$ [7msudo restic -r ~/w[27m[7me[27m[7mek13/restic-repo backup ~/week13/backup/db/ --tag [27m
+[7mdb_backup --tag $(date +%F)[27m
+[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo restic -r ~/week13/restic-repo backup ~/week13/backup/db/ --tag
+db_backup --tag $(date +%F)
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdb_backup --tag $(date +%F)[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C db_backup --tag $(date +%F)[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/week13/backup/db/ --tag db_backup --tag $(date +%F)[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cl/week13/backup/db/ --tag db_backup --tag $(date +%F)[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci/week13/backup/db/ --tag db_backup --tag $(date +%F)[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnux/week13/backup/db/ --tag db_backup --tag $(date +%F)[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+[?2004lFatal: unable to open config file: stat /home/asd/week13/restic-repo/config: no such file or directory
+Is there a repository at the following location?
+/home/asd/week13/restic-repo
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$ rmki[K[Kdir r[K-r /[K~/week13
+[?2004lrmdir: invalid option -- 'r'
+Try 'rmdir --help' for more information.
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$ rmdir -r ~/week13[C[1P[1P[1P[C[C[Cf ~/week13
+[?2004l[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$ rm -rf ~/week13[2@dir -r[C[C[C[C[C[C[C[C[Csudo restic -r ~/week13/restic-repo backup ~/linux/week13/backup/db/ --tag db_backup --tag $(date +%F)[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/w[Cek13/restic-repo backup ~/linux/week13/backup/db/ --tag db_backup --tag $(d[1@a[A[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cl/week13/restic-repo backup ~/linux/week13/backup/db/ --tag db_backup --tag $([1@d[Ai/week13/restic-repo backup ~/linux/week13/backup/db/ --tag db_backup --tag $[1@([Anux/week13/restic-repo backup ~/linux/week13/backup/db/ --tag db_backup --ta[3@g $[A
+
+[?2004lenter password for repository: 
+[2Krepository 2ff72554 opened (version 2, compression level auto)
+[2Kno parent snapshot found, will read all files
+[2K[0:00] 100.00%  1 / 1 index files loaded
+[2K[0:00] 100.00%  1 / 1 index files loaded[2K[0:00] 0 files 340.042 KiB, total 1 files 340.042 KiB, 0 errors
+[2K/home/asd/linux/week13/backup/db/db_2026-06-05.sql.gz[1A[2K[0:00] 1 files 340.042 KiB, total 1 files 340.042 KiB, 0 errors
+[2K[1A[2K[0:00] 1 files 340.042 KiB, total 1 files 340.042 KiB, 0 errors[2K[0:00] 1 files 340.042 KiB, total 1 files 340.042 KiB, 0 errors[2K[2K
+[2K[2KFiles:           1 new,     0 changed,     0 unmodified
+[2K[2KDirs:            6 new,     0 changed,     0 unmodified
+[2K[2KAdded to the repository: 342.580 KiB (342.145 KiB stored)
+[2K[2K
+[2K[2Kprocessed 1 files, 340.042 KiB in 0:00
+[2K[2Ksnapshot 5d67b9e7 saved
+[2K[2K
+[1A[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$ [7msudo restic -r ~/w[27m[7me[27m[7mek13/restic-repo snapshots[27m[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$ sudo restic -r ~/week13/restic-repo snapshots
+[?2004lFatal: unable to open config file: stat /home/asd/week13/restic-repo/config: no such file or directory
+Is there a repository at the following location?
+/home/asd/week13/restic-repo
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$ sudo restic -r ~/week13/restic-repo snapshots[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/w[C[1@e[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cl/[1@w[1@i[3@nux
+[?2004lenter password for repository: 
+repository 2ff72554 opened (version 2, compression level auto)
+ID        Time                 Host             Tags                  Paths
+---------------------------------------------------------------------------------------------------------------------
+aff31e35  2026-06-05 09:45:51  DESKTOP-GG23J57  wp_files,week13       /var/lib/docker/volumes/wordpress_wp_data/_data
+7897698d  2026-06-05 10:14:47  DESKTOP-GG23J57  wp_files              /var/lib/docker/volumes/wordpress_wp_data/_data
+5d67b9e7  2026-06-05 10:25:34  DESKTOP-GG23J57  db_backup,2026-06-05  /home/asd/linux/week13/backup/db
+---------------------------------------------------------------------------------------------------------------------
+3 snapshots
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$ sudo restic -r ~/l inux/week13/rest-p[Kre[K[K[K[K[K[K[Krestic-repo/[K diff \ f[K[7msudo restic -r ~/week13/restic-repo snapshots[27m [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Psudo restic -r ~/week13/restic-repo snapshot
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kaff31e35 7897698d
+[?2004lenter password for repository: 
+repository 2ff72554 opened (version 2, compression level auto)
+Fatal: no matching ID found for prefix " aff31e35"
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$ sudo restic -r ~/linux/week13/restic-repo diff \ aff31e35 7897698d[1P[1P
+[?2004lenter password for repository: 
+repository 2ff72554 opened (version 2, compression level auto)
+comparing snapshot aff31e35 to 7897698d:
+
+[2K[0:00] 50.00%  1 / 2 index files loaded[2K[0:00] 100.00%  2 / 2 index files loaded
+
+Files:           0 new,     0 removed,     0 changed
+Dirs:            0 new,     0 removed
+Others:          0 new,     0 removed
+Data Blobs:      0 new,     0 removed
+Tree Blobs:      0 new,     0 removed
+  Added:   0 B  
+  Removed: 0 B  
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13/restic-repo/snapshots[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/restic-repo/snapshots[00m$ sudo[K[K[K[Kcd ~/linux/week13/ backup/db
+[?2004l[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ [7msudo restic -r ~/week13/restic[27m[7m-[27m[7mrepo check [27m
+[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo restic -r ~/week13/restic-repo check
+[K[A[C[C[C[C[C[C[C[C[C[C[C
+[?2004lusing temporary cache in /tmp/restic-check-cache-3154570144
+Fatal: unable to open config file: stat /home/asd/week13/restic-repo/config: no such file or directory
+Is there a repository at the following location?
+/home/asd/week13/restic-repo
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ sudo restic -r ~/week13/restic-repo check[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/week13/restic[1@-[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci/week13/resti[1@c[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/week13/restic[1P[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cl/week13/resti[1@c[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci/week13/rest[1@i[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnux/week13/r[3@est[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+[?2004lusing temporary cache in /tmp/restic-check-cache-2525071554
+enter password for repository: 
+repository 2ff72554 opened (version 2, compression level auto)
+created new cache in /tmp/restic-check-cache-2525071554
+create exclusive lock for repository
+load indexes
+[2K[0:00] 50.00%  1 / 2 index files loaded[2K[0:00] 100.00%  2 / 2 index files loaded
+check all packs
+check snapshots, trees and blobs
+[2K[0:00] 66.67%  2 / 3 snapshots[2K[0:00] 66.67%  2 / 3 snapshots[2K[0:00] 100.00%  3 / 3 snapshots
+no errors were found
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ [7mdocker exec wp_db mysql \ -u w[27m[7mp[27m[7muser -pwppass_2026! [27m
+[7mwordpress \ -e "SELECT COUNT(*) FROM wp_posts;“[27m[A[Adocker exec wp_db mysql \ -u wpuser -pwppass_2026!
+wordpress \ -e "SELECT COUNT(*) FROM wp_posts;“[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cwordpress \ -e "SELECT COUNT(*) FROM wp_posts;“
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@ [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -u wpu[1P[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-u wpus[1P[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+[?2004l[?2004h> ^C[?2004l[?2004h[?2004l
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ docker exec wp_db mysql -u wpuser -pwppass_2026! wordpress \ -e "SELECT COUNT(*) FROM wp_posts;“[K"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lmysql: [Warning] Using a password on the command line interface can be insecure.
+mysql  Ver 8.0.46 for Linux on x86_64 (MySQL Community Server - GPL)
+Copyright (c) 2000, 2026, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Usage: mysql [OPTIONS] [database]
+  -?, --help          Display this help and exit.
+  -I, --help          Synonym for -?
+  --auto-rehash       Enable automatic rehashing. One doesn't need to use
+                      'rehash' to get table and field completion, but startup
+                      and reconnecting may take a longer time. Disable with
+                      --disable-auto-rehash.
+                      (Defaults to on; use --skip-auto-rehash to disable.)
+  -A, --no-auto-rehash 
+                      No automatic rehashing. One has to use 'rehash' to get
+                      table and field completion. This gives a quicker start of
+                      mysql and disables rehashing on reconnect.
+  --auto-vertical-output 
+                      Automatically switch to vertical output mode if the
+                      result is wider than the terminal width.
+  -B, --batch         Don't use history file. Disable interactive behavior.
+                      (Enables --silent.)
+  --bind-address=name IP address to bind to.
+  --binary-as-hex     Print binary data as hex. Enabled by default for
+                      interactive terminals.
+  --character-sets-dir=name 
+                      Directory for character set files.
+  --column-type-info  Display column type information.
+  --commands          Enable or disable processing of local mysql commands.
+                      (Defaults to on; use --skip-commands to disable.)
+  -c, --comments      Preserve comments. Send comments to the server. The
+                      default is --skip-comments (discard comments), enable
+                      with --comments.
+  -C, --compress      Use compression in server/client protocol.
+  -#, --debug[=#]     This is a non-debug version. Catch this and exit.
+  --debug-check       This is a non-debug version. Catch this and exit.
+  -T, --debug-info    This is a non-debug version. Catch this and exit.
+  -D, --database=name Database to use.
+  --default-character-set=name 
+                      Set the default character set.
+  --delimiter=name    Delimiter to be used.
+  --enable-cleartext-plugin 
+                      Enable/disable the clear text authentication plugin.
+  -e, --execute=name  Execute command and quit. (Disables --force and history
+                      file.)
+  -E, --vertical      Print the output of a query (rows) vertically.
+  -f, --force         Continue even if we get an SQL error.
+  --histignore=name   A colon-separated list of patterns to keep statements
+                      from getting logged into syslog and mysql history.
+  -G, --named-commands 
+                      Enable named commands. Named commands mean this program's
+                      internal commands; see mysql> help . When enabled, the
+                      named commands can be used from any line of the query,
+                      otherwise only from the first line, before an enter.
+                      Disable with --disable-named-commands. This option is
+                      disabled by default.
+  -i, --ignore-spaces Ignore space after function names.
+  --init-command=name SQL Command to execute when connecting to MySQL server.
+                      Will automatically be re-executed when reconnecting.
+  --local-infile      Enable/disable LOAD DATA LOCAL INFILE.
+  -b, --no-beep       Turn off beep on error.
+  -h, --host=name     Connect to host.
+  --dns-srv-name=name Connect to a DNS SRV resource
+  -H, --html          Produce HTML output.
+  -X, --xml           Produce XML output.
+  --line-numbers      Write line numbers for errors.
+                      (Defaults to on; use --skip-line-numbers to disable.)
+  -L, --skip-line-numbers 
+                      Don't write line number for errors.
+  -n, --unbuffered    Flush buffer after each query.
+  --column-names      Write column names in results.
+                      (Defaults to on; use --skip-column-names to disable.)
+  -N, --skip-column-names 
+                      Don't write column names in results.
+  --sigint-ignore     Ignore SIGINT (CTRL-C).
+  -o, --one-database  Ignore statements except those that occur while the
+                      default database is the one named at the command line.
+  --pager[=name]      Pager to use to display results. If you don't supply an
+                      option, the default pager is taken from your ENV variable
+                      PAGER. Valid pagers are less, more, cat [> filename],
+                      etc. See interactive help (\h) also. This option does not
+                      work in batch mode. Disable with --disable-pager. This
+                      option is disabled by default.
+  -p, --password[=name] 
+                      Password to use when connecting to server. If password is
+                      not given it's asked from the tty.
+  -,, --password1[=name] 
+                      Password for first factor authentication plugin.
+  -,, --password2[=name] 
+                      Password for second factor authentication plugin.
+  -,, --password3[=name] 
+                      Password for third factor authentication plugin.
+  -P, --port=#        Port number to use for connection or 0 for default to, in
+                      order of preference, my.cnf, $MYSQL_TCP_PORT,
+                      /etc/services, built-in default (3306).
+  --prompt=name       Set the mysql prompt to this value.
+  --protocol=name     The protocol to use for connection (tcp, socket, pipe,
+                      memory).
+  -q, --quick         Don't cache result, print it row by row. This may slow
+                      down the server if the output is suspended. Doesn't use
+                      history file.
+  -r, --raw           Write fields without conversion. Used with --batch.
+  --reconnect         Reconnect if the connection is lost. Disable with
+                      --disable-reconnect. This option is enabled by default.
+                      (Defaults to on; use --skip-reconnect to disable.)
+  -s, --silent        Be more silent. Print results with a tab as separator,
+                      each row on new line.
+  -S, --socket=name   The socket file to use for connection.
+  --server-public-key-path=name 
+                      File path to the server public RSA key in PEM format.
+  --get-server-public-key 
+                      Get server public key
+  --ssl-mode=name     SSL connection mode.
+  --ssl-ca=name       CA file in PEM format.
+  --ssl-capath=name   CA directory.
+  --ssl-cert=name     X509 cert in PEM format.
+  --ssl-cipher=name   SSL cipher to use.
+  --ssl-key=name      X509 key in PEM format.
+  --ssl-crl=name      Certificate revocation list.
+  --ssl-crlpath=name  Certificate revocation list path.
+  --tls-version=name  TLS version to use, permitted values are: TLSv1.2,
+                      TLSv1.3
+  --ssl-fips-mode=name 
+                      SSL FIPS mode (applies only for OpenSSL); permitted
+                      values are: OFF, ON, STRICT
+  --tls-ciphersuites=name 
+                      TLS v1.3 cipher to use.
+  --ssl-session-data=name 
+                      Session data file to use to enable ssl session reuse
+  --ssl-session-data-continue-on-failed-reuse 
+                      If set to ON, this option will allow connection to
+                      succeed even if session data cannot be reused.
+  -t, --table         Output in table format.
+  --tee=name          Append everything into outfile. See interactive help (\h)
+                      also. Does not work in batch mode. Disable with
+                      --disable-tee. This option is disabled by default.
+  -u, --user=name     User for login if not current user.
+  -U, --safe-updates  Only allow UPDATE and DELETE that uses keys.
+  -U, --i-am-a-dummy  Synonym for option --safe-updates, -U.
+  -v, --verbose       Write more. (-v -v -v gives the table output format).
+  -V, --version       Output version information and exit.
+  -w, --wait          Wait and retry if connection is down.
+  --connect-timeout=# Number of seconds before connection timeout.
+  --max-allowed-packet=# 
+                      The maximum packet length to send to or receive from
+                      server.
+  --net-buffer-length=# 
+                      The buffer size for TCP/IP and socket communication.
+  --select-limit=#    Automatic limit for SELECT when using --safe-updates.
+  --max-join-size=#   Automatic limit for rows in a join when using
+                      --safe-updates.
+  --show-warnings     Show warnings after every statement.
+  -j, --syslog        Log filtered interactive commands to syslog. Filtering of
+                      commands depends on the patterns supplied via histignore
+                      option besides the default patterns.
+  --plugin-dir=name   Directory for client-side plugins.
+  --default-auth=name Default authentication client-side plugin to use.
+  --binary-mode       By default, ASCII '\0' is disallowed and '\r\n' is
+                      translated to '\n'. This switch turns off both features,
+                      and also turns off parsing of all clientcommands except
+                      \C and DELIMITER, in non-interactive mode (for input
+                      piped to mysql or loaded using the 'source' command).
+                      This is necessary when processing output from mysqlbinlog
+                      that may contain blobs.
+  --connect-expired-password 
+                      Notify the server that this client is prepared to handle
+                      expired password sandbox mode.
+  --network-namespace=name 
+                      Network namespace to use for connection via tcp with a
+                      server.
+  --compression-algorithms=name 
+                      Use compression algorithm in server/client protocol.
+                      Valid values are any combination of
+                      'zstd','zlib','uncompressed'.
+  --zstd-compression-level=# 
+                      Use this compression level in the client/server protocol,
+                      in case --compression-algorithms=zstd. Valid range is
+                      between 1 and 22, inclusive. Default is 3.
+  --load-data-local-dir=name 
+                      Directory path safe for LOAD DATA LOCAL INFILE to read
+                      from.
+  --fido-register-factor=name 
+                      Specifies authentication factor, for which registration
+                      needs to be done.
+  --authentication-oci-client-config-profile=name 
+                      Specifies the configuration profile whose configuration
+                      options are to be read from the OCI configuration file.
+                      Default is DEFAULT.
+  --oci-config-file=name 
+                      Specifies the location of the OCI configuration file.
+                      Default for Linux is ~/.oci/config and %HOME/.oci/config
+                      on Windows.
+  --system-command    Enable (by default) or disable the system mysql command.
+                      (Defaults to on; use --skip-system-command to disable.)
+
+Default options are read from the following files in the given order:
+/etc/my.cnf /etc/mysql/my.cnf /usr/etc/my.cnf ~/.my.cnf 
+The following groups are read: mysql client
+The following options may be given as the first argument:
+--print-defaults        Print the program argument list and exit.
+--no-defaults           Don't read default options from any option file,
+                        except for login file.
+--defaults-file=#       Only read default options from the given file #.
+--defaults-extra-file=# Read this file after the global files are read.
+--defaults-group-suffix=#
+                        Also read groups with concat(group, suffix)
+--login-path=#          Read this path from the login file.
+
+Variables (--variable-name=value)
+and boolean options {FALSE|TRUE}          Value (after reading options)
+----------------------------------------- --------------------------------
+auto-rehash                               TRUE
+auto-vertical-output                      FALSE
+bind-address                              (No default value)
+binary-as-hex                             FALSE
+character-sets-dir                        (No default value)
+column-type-info                          FALSE
+commands                                  TRUE
+comments                                  FALSE
+compress                                  FALSE
+database                                  (No default value)
+default-character-set                     auto
+delimiter                                 ;
+enable-cleartext-plugin                   FALSE
+vertical                                  FALSE
+force                                     FALSE
+histignore                                (No default value)
+named-commands                            FALSE
+ignore-spaces                             FALSE
+init-command                              (No default value)
+local-infile                              FALSE
+no-beep                                   FALSE
+host                                      (No default value)
+dns-srv-name                              (No default value)
+html                                      FALSE
+xml                                       FALSE
+line-numbers                              TRUE
+unbuffered                                FALSE
+column-names                              TRUE
+sigint-ignore                             FALSE
+port                                      0
+prompt                                    mysql> 
+quick                                     FALSE
+raw                                       FALSE
+reconnect                                 FALSE
+socket                                    /var/run/mysqld/mysqld.sock
+server-public-key-path                    (No default value)
+get-server-public-key                     FALSE
+ssl-ca                                    (No default value)
+ssl-capath                                (No default value)
+ssl-cert                                  (No default value)
+ssl-cipher                                (No default value)
+ssl-key                                   (No default value)
+ssl-crl                                   (No default value)
+ssl-crlpath                               (No default value)
+tls-version                               (No default value)
+tls-ciphersuites                          (No default value)
+ssl-session-data                          (No default value)
+ssl-session-data-continue-on-failed-reuse FALSE
+table                                     FALSE
+user                                      wpuser
+safe-updates                              FALSE
+i-am-a-dummy                              FALSE
+connect-timeout                           0
+max-allowed-packet                        16777216
+net-buffer-length                         16384
+select-limit                              1000
+max-join-size                             1000000
+show-warnings                             FALSE
+plugin-dir                                (No default value)
+default-auth                              (No default value)
+binary-mode                               FALSE
+connect-expired-password                  FALSE
+network-namespace                         (No default value)
+compression-algorithms                    (No default value)
+zstd-compression-level                    3
+load-data-local-dir                       (No default value)
+fido-register-factor                      (No default value)
+authentication-oci-client-config-profile  (No default value)
+oci-config-file                           (No default value)
+system-command                            TRUE
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ [7msudo restic -r ~/week13/restic[27m[7m-[27m[7mrepo snapshots[27m[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ sudo restic -r ~/week13/restic-repo snapshots
+[?2004lFatal: unable to open config file: stat /home/asd/week13/restic-repo/config: no such file or directory
+Is there a repository at the following location?
+/home/asd/week13/restic-repo
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ sudo restic -r ~/week13/restic-repo snapshots[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/week13/restic[1@-[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cl/week13/resti[1@c[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci/week13/rest[1@i[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnux/week13/r[3@est[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+[?2004lenter password for repository: 
+repository 2ff72554 opened (version 2, compression level auto)
+ID        Time                 Host             Tags                  Paths
+---------------------------------------------------------------------------------------------------------------------
+aff31e35  2026-06-05 09:45:51  DESKTOP-GG23J57  wp_files,week13       /var/lib/docker/volumes/wordpress_wp_data/_data
+7897698d  2026-06-05 10:14:47  DESKTOP-GG23J57  wp_files              /var/lib/docker/volumes/wordpress_wp_data/_data
+5d67b9e7  2026-06-05 10:25:34  DESKTOP-GG23J57  db_backup,2026-06-05  /home/asd/linux/week13/backup/db
+---------------------------------------------------------------------------------------------------------------------
+3 snapshots
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ [7mdocker exec wp_db mysql \ -u w[27m[7mp[27m[7muser -pwppass_2026! [27m
+[7mwordpress \ -e "DELETE FROM wp_posts;“[27m[A[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ docker exec wp_db mysql \ -u wpuser -pwppass_2026!
+wordpress \ -e "DELETE FROM wp_posts;“[K"[1@\[1P[1P[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cwordpress -e "DELETE FROM wp_posts;"
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@ [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C\ -u wpu[1P[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -u wpus[1P[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+[?2004lmysql: [Warning] Using a password on the command line interface can be insecure.
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ [7msudo restic -r ~/week13/restic[27m[7m-[27m[7mrepo snapshots \ --tag db_backup [27m
+[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo restic -r ~/week13/restic-repo snapshots \ --tag db_backup
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/week13/restic[1@-[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cl/week13/resti[1@c[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci/week13/rest[1@i[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnux/week13/r[3@est[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+[?2004lenter password for repository: 
+repository 2ff72554 opened (version 2, compression level auto)
+Ignoring " --tag": no matching ID found for prefix " --tag"
+Ignoring "db_backup": no matching ID found for prefix "db_backup"
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ sudo restic -r ~/linux/week13/restic-repo snapshots \ --tag db_backup[C[1P[1P[1@-[1@-[C[1P[1@-
+[?2004lenter password for repository: 
+repository 2ff72554 opened (version 2, compression level auto)
+Ignoring " --tag": no matching ID found for prefix " --tag"
+Ignoring "db_backup": no matching ID found for prefix "db_backup"
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ [7msudo restic -r ~/week13/restic[27m[7m-[27m[7mrepo snapshots \ --tag db_backup[27m[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ sudo restic -r ~/week13/restic-repo snapshots \ --tag db_backup[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/week13/restic[1@-[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cl/week13/resti[1@c[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci/week13/rest[1@i[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cn/week13/res[1@t[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cux/week13/r[2@es[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+[?2004lenter password for repository: 
+repository 2ff72554 opened (version 2, compression level auto)
+Ignoring " --tag": no matching ID found for prefix " --tag"
+Ignoring "db_backup": no matching ID found for prefix "db_backup"
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ sudo restic -r ~/linux/week13/restic-repo snapshots \ --tag db_backup[C[1P[1P
+[?2004lenter password for repository: 
+repository 2ff72554 opened (version 2, compression level auto)
+ID        Time                 Host             Tags                  Paths
+------------------------------------------------------------------------------------------------------
+5d67b9e7  2026-06-05 10:25:34  DESKTOP-GG23J57  db_backup,2026-06-05  /home/asd/linux/week13/backup/db
+------------------------------------------------------------------------------------------------------
+1 snapshots
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ [7msudo restic -r ~/week13/restic[27m[7m-[27m[7mrepo restore 스냅샷ID --target ~/week13/restore/[27m[Asudo restic -r ~/week13/restic-repo restore 스냅샷ID --target ~/week13/restore/[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/week13/restic[1@-[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cweek13/restic-[1P[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/week13/restic[1@-[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cl/week13/resti[1@c[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci/week13/rest[1@i[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnux/week13/r[3@est[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[2P[2P[2P[8@[7m5d67b9e7[27m5d67b9e7[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lenter password for repository: 
+[2Krepository 2ff72554 opened (version 2, compression level auto)
+
+[2K[0:00] 100.00%  2 / 2 index files loaded[2Krestoring <Snapshot 5d67b9e7 of [/home/asd/linux/week13/backup/db] at 2026-06-05 10:25:34.793968938 +0900 KST by root@DESKTOP-GG23J57> to /home/asd/week13/restore/
+[2K[0:00] 100.00%  2 / 2 index files loaded[2KSummary: Restored 7 files/dirs (340.042 KiB) in 0:00
+[2K[0:00] 100.00%  2 / 2 index files loaded[2K
+[1A[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ cd ~/week[K[K[K[Klinux/week13/backup/db
+[?2004l[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ ls
+[?2004l[0m[01;31mdb_2026-06-05.sql.gz[0m
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ [7msudo gunzip -c 파일명 | docker[27m[7m [27m[7mexec -i wp_db mysql -u wpuser - [27m
+[7mpwppass_2026! Wordpress[27m[A[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ sudo gunzip -c 파일명 | docker exec -i wp_db mysql -u wpuser -
+pwppass_2026! Wordpress[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpwppass_2026! Wordpress
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C | docker ex[C[2P[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C | docker exec[2P[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C | docker exec -[2P[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cd | docker exec [1@-[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cb | docker exec[1@ [A]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C_ | docker exe[1@c[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C2026-06-05.sq[17@l.gz | docker exe[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lmysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1044 (42000): Access denied for user 'wpuser'@'%' to database 'Wordpress'
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ sudo gunzip -c db_2026-06-05.sql.gz | docker exec -i wp_db mysql -u wpuser -pwppass_2026! Wordpress[1Pordpresswordpress
+[?2004lmysql: [Warning] Using a password on the command line interface can be insecure.
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ ls
+[?2004l[0m[01;31mdb_2026-06-05.sql.gz[0m
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ [7mdocker exec wp_db mysql \ -u w[27m[7mp[27m[7muser -pwppass_2026! wordpress \ -e "SELECT [27m
+[7mCOUNT(*) FROM wp_posts;“[27m[A[A]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ docker exec wp_db mysql \ -u wpuser -pwppass_2026! wordpress \ -e "SELECT
+COUNT(*) FROM wp_posts;“[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CCOUNT(*) FROM wp_posts;“
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@ [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K"
+[?2004lmysql: [Warning] Using a password on the command line interface can be insecure.
+mysql  Ver 8.0.46 for Linux on x86_64 (MySQL Community Server - GPL)
+Copyright (c) 2000, 2026, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Usage: mysql [OPTIONS] [database]
+  -?, --help          Display this help and exit.
+  -I, --help          Synonym for -?
+  --auto-rehash       Enable automatic rehashing. One doesn't need to use
+                      'rehash' to get table and field completion, but startup
+                      and reconnecting may take a longer time. Disable with
+                      --disable-auto-rehash.
+                      (Defaults to on; use --skip-auto-rehash to disable.)
+  -A, --no-auto-rehash 
+                      No automatic rehashing. One has to use 'rehash' to get
+                      table and field completion. This gives a quicker start of
+                      mysql and disables rehashing on reconnect.
+  --auto-vertical-output 
+                      Automatically switch to vertical output mode if the
+                      result is wider than the terminal width.
+  -B, --batch         Don't use history file. Disable interactive behavior.
+                      (Enables --silent.)
+  --bind-address=name IP address to bind to.
+  --binary-as-hex     Print binary data as hex. Enabled by default for
+                      interactive terminals.
+  --character-sets-dir=name 
+                      Directory for character set files.
+  --column-type-info  Display column type information.
+  --commands          Enable or disable processing of local mysql commands.
+                      (Defaults to on; use --skip-commands to disable.)
+  -c, --comments      Preserve comments. Send comments to the server. The
+                      default is --skip-comments (discard comments), enable
+                      with --comments.
+  -C, --compress      Use compression in server/client protocol.
+  -#, --debug[=#]     This is a non-debug version. Catch this and exit.
+  --debug-check       This is a non-debug version. Catch this and exit.
+  -T, --debug-info    This is a non-debug version. Catch this and exit.
+  -D, --database=name Database to use.
+  --default-character-set=name 
+                      Set the default character set.
+  --delimiter=name    Delimiter to be used.
+  --enable-cleartext-plugin 
+                      Enable/disable the clear text authentication plugin.
+  -e, --execute=name  Execute command and quit. (Disables --force and history
+                      file.)
+  -E, --vertical      Print the output of a query (rows) vertically.
+  -f, --force         Continue even if we get an SQL error.
+  --histignore=name   A colon-separated list of patterns to keep statements
+                      from getting logged into syslog and mysql history.
+  -G, --named-commands 
+                      Enable named commands. Named commands mean this program's
+                      internal commands; see mysql> help . When enabled, the
+                      named commands can be used from any line of the query,
+                      otherwise only from the first line, before an enter.
+                      Disable with --disable-named-commands. This option is
+                      disabled by default.
+  -i, --ignore-spaces Ignore space after function names.
+  --init-command=name SQL Command to execute when connecting to MySQL server.
+                      Will automatically be re-executed when reconnecting.
+  --local-infile      Enable/disable LOAD DATA LOCAL INFILE.
+  -b, --no-beep       Turn off beep on error.
+  -h, --host=name     Connect to host.
+  --dns-srv-name=name Connect to a DNS SRV resource
+  -H, --html          Produce HTML output.
+  -X, --xml           Produce XML output.
+  --line-numbers      Write line numbers for errors.
+                      (Defaults to on; use --skip-line-numbers to disable.)
+  -L, --skip-line-numbers 
+                      Don't write line number for errors.
+  -n, --unbuffered    Flush buffer after each query.
+  --column-names      Write column names in results.
+                      (Defaults to on; use --skip-column-names to disable.)
+  -N, --skip-column-names 
+                      Don't write column names in results.
+  --sigint-ignore     Ignore SIGINT (CTRL-C).
+  -o, --one-database  Ignore statements except those that occur while the
+                      default database is the one named at the command line.
+  --pager[=name]      Pager to use to display results. If you don't supply an
+                      option, the default pager is taken from your ENV variable
+                      PAGER. Valid pagers are less, more, cat [> filename],
+                      etc. See interactive help (\h) also. This option does not
+                      work in batch mode. Disable with --disable-pager. This
+                      option is disabled by default.
+  -p, --password[=name] 
+                      Password to use when connecting to server. If password is
+                      not given it's asked from the tty.
+  -,, --password1[=name] 
+                      Password for first factor authentication plugin.
+  -,, --password2[=name] 
+                      Password for second factor authentication plugin.
+  -,, --password3[=name] 
+                      Password for third factor authentication plugin.
+  -P, --port=#        Port number to use for connection or 0 for default to, in
+                      order of preference, my.cnf, $MYSQL_TCP_PORT,
+                      /etc/services, built-in default (3306).
+  --prompt=name       Set the mysql prompt to this value.
+  --protocol=name     The protocol to use for connection (tcp, socket, pipe,
+                      memory).
+  -q, --quick         Don't cache result, print it row by row. This may slow
+                      down the server if the output is suspended. Doesn't use
+                      history file.
+  -r, --raw           Write fields without conversion. Used with --batch.
+  --reconnect         Reconnect if the connection is lost. Disable with
+                      --disable-reconnect. This option is enabled by default.
+                      (Defaults to on; use --skip-reconnect to disable.)
+  -s, --silent        Be more silent. Print results with a tab as separator,
+                      each row on new line.
+  -S, --socket=name   The socket file to use for connection.
+  --server-public-key-path=name 
+                      File path to the server public RSA key in PEM format.
+  --get-server-public-key 
+                      Get server public key
+  --ssl-mode=name     SSL connection mode.
+  --ssl-ca=name       CA file in PEM format.
+  --ssl-capath=name   CA directory.
+  --ssl-cert=name     X509 cert in PEM format.
+  --ssl-cipher=name   SSL cipher to use.
+  --ssl-key=name      X509 key in PEM format.
+  --ssl-crl=name      Certificate revocation list.
+  --ssl-crlpath=name  Certificate revocation list path.
+  --tls-version=name  TLS version to use, permitted values are: TLSv1.2,
+                      TLSv1.3
+  --ssl-fips-mode=name 
+                      SSL FIPS mode (applies only for OpenSSL); permitted
+                      values are: OFF, ON, STRICT
+  --tls-ciphersuites=name 
+                      TLS v1.3 cipher to use.
+  --ssl-session-data=name 
+                      Session data file to use to enable ssl session reuse
+  --ssl-session-data-continue-on-failed-reuse 
+                      If set to ON, this option will allow connection to
+                      succeed even if session data cannot be reused.
+  -t, --table         Output in table format.
+  --tee=name          Append everything into outfile. See interactive help (\h)
+                      also. Does not work in batch mode. Disable with
+                      --disable-tee. This option is disabled by default.
+  -u, --user=name     User for login if not current user.
+  -U, --safe-updates  Only allow UPDATE and DELETE that uses keys.
+  -U, --i-am-a-dummy  Synonym for option --safe-updates, -U.
+  -v, --verbose       Write more. (-v -v -v gives the table output format).
+  -V, --version       Output version information and exit.
+  -w, --wait          Wait and retry if connection is down.
+  --connect-timeout=# Number of seconds before connection timeout.
+  --max-allowed-packet=# 
+                      The maximum packet length to send to or receive from
+                      server.
+  --net-buffer-length=# 
+                      The buffer size for TCP/IP and socket communication.
+  --select-limit=#    Automatic limit for SELECT when using --safe-updates.
+  --max-join-size=#   Automatic limit for rows in a join when using
+                      --safe-updates.
+  --show-warnings     Show warnings after every statement.
+  -j, --syslog        Log filtered interactive commands to syslog. Filtering of
+                      commands depends on the patterns supplied via histignore
+                      option besides the default patterns.
+  --plugin-dir=name   Directory for client-side plugins.
+  --default-auth=name Default authentication client-side plugin to use.
+  --binary-mode       By default, ASCII '\0' is disallowed and '\r\n' is
+                      translated to '\n'. This switch turns off both features,
+                      and also turns off parsing of all clientcommands except
+                      \C and DELIMITER, in non-interactive mode (for input
+                      piped to mysql or loaded using the 'source' command).
+                      This is necessary when processing output from mysqlbinlog
+                      that may contain blobs.
+  --connect-expired-password 
+                      Notify the server that this client is prepared to handle
+                      expired password sandbox mode.
+  --network-namespace=name 
+                      Network namespace to use for connection via tcp with a
+                      server.
+  --compression-algorithms=name 
+                      Use compression algorithm in server/client protocol.
+                      Valid values are any combination of
+                      'zstd','zlib','uncompressed'.
+  --zstd-compression-level=# 
+                      Use this compression level in the client/server protocol,
+                      in case --compression-algorithms=zstd. Valid range is
+                      between 1 and 22, inclusive. Default is 3.
+  --load-data-local-dir=name 
+                      Directory path safe for LOAD DATA LOCAL INFILE to read
+                      from.
+  --fido-register-factor=name 
+                      Specifies authentication factor, for which registration
+                      needs to be done.
+  --authentication-oci-client-config-profile=name 
+                      Specifies the configuration profile whose configuration
+                      options are to be read from the OCI configuration file.
+                      Default is DEFAULT.
+  --oci-config-file=name 
+                      Specifies the location of the OCI configuration file.
+                      Default for Linux is ~/.oci/config and %HOME/.oci/config
+                      on Windows.
+  --system-command    Enable (by default) or disable the system mysql command.
+                      (Defaults to on; use --skip-system-command to disable.)
+
+Default options are read from the following files in the given order:
+/etc/my.cnf /etc/mysql/my.cnf /usr/etc/my.cnf ~/.my.cnf 
+The following groups are read: mysql client
+The following options may be given as the first argument:
+--print-defaults        Print the program argument list and exit.
+--no-defaults           Don't read default options from any option file,
+                        except for login file.
+--defaults-file=#       Only read default options from the given file #.
+--defaults-extra-file=# Read this file after the global files are read.
+--defaults-group-suffix=#
+                        Also read groups with concat(group, suffix)
+--login-path=#          Read this path from the login file.
+
+Variables (--variable-name=value)
+and boolean options {FALSE|TRUE}          Value (after reading options)
+----------------------------------------- --------------------------------
+auto-rehash                               TRUE
+auto-vertical-output                      FALSE
+bind-address                              (No default value)
+binary-as-hex                             FALSE
+character-sets-dir                        (No default value)
+column-type-info                          FALSE
+commands                                  TRUE
+comments                                  FALSE
+compress                                  FALSE
+database                                  (No default value)
+default-character-set                     auto
+delimiter                                 ;
+enable-cleartext-plugin                   FALSE
+vertical                                  FALSE
+force                                     FALSE
+histignore                                (No default value)
+named-commands                            FALSE
+ignore-spaces                             FALSE
+init-command                              (No default value)
+local-infile                              FALSE
+no-beep                                   FALSE
+host                                      (No default value)
+dns-srv-name                              (No default value)
+html                                      FALSE
+xml                                       FALSE
+line-numbers                              TRUE
+unbuffered                                FALSE
+column-names                              TRUE
+sigint-ignore                             FALSE
+port                                      0
+prompt                                    mysql> 
+quick                                     FALSE
+raw                                       FALSE
+reconnect                                 FALSE
+socket                                    /var/run/mysqld/mysqld.sock
+server-public-key-path                    (No default value)
+get-server-public-key                     FALSE
+ssl-ca                                    (No default value)
+ssl-capath                                (No default value)
+ssl-cert                                  (No default value)
+ssl-cipher                                (No default value)
+ssl-key                                   (No default value)
+ssl-crl                                   (No default value)
+ssl-crlpath                               (No default value)
+tls-version                               (No default value)
+tls-ciphersuites                          (No default value)
+ssl-session-data                          (No default value)
+ssl-session-data-continue-on-failed-reuse FALSE
+table                                     FALSE
+user                                      (No default value)
+safe-updates                              FALSE
+i-am-a-dummy                              FALSE
+connect-timeout                           0
+max-allowed-packet                        16777216
+net-buffer-length                         16384
+select-limit                              1000
+max-join-size                             1000000
+show-warnings                             FALSE
+plugin-dir                                (No default value)
+default-auth                              (No default value)
+binary-mode                               FALSE
+connect-expired-password                  FALSE
+network-namespace                         (No default value)
+compression-algorithms                    (No default value)
+zstd-compression-level                    3
+load-data-local-dir                       (No default value)
+fido-register-factor                      (No default value)
+authentication-oci-client-config-profile  (No default value)
+oci-config-file                           (No default value)
+system-command                            TRUE
+[?2004h]0;asd@DESKTOP-GG23J57: ~/linux/week13/backup/db[01;32masd@DESKTOP-GG23J57[00m:[01;34m~/linux/week13/backup/db[00m$ exit
+[?2004lexit
+
+Script done on 2026-06-05 10:57:16+09:00 [COMMAND_EXIT_CODE="1"]
