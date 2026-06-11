@@ -124,3 +124,77 @@ db와 wp를 병합 실행/확인/wp초기화로그/정지
 - docker compose -f dbyaml파일 -f wpyaml파일 ps
 - docker compose -f dbyaml파일 -f wpyaml파일 log -f wordpress
 - docker compose -f dbyaml파일 -f wpyaml파일 down
+
+
+11주차
+
+Portainer  
+- 컨테이너 관리
+
+Portainer 접속  
+- docker compose -f .yaml파일 up -d portainer
+
+Portainer 사이트  
+- Inspect 탭: 컨테이너 상세 JSON
+- Stats 탭: CPU/메모리 실시간 그래프
+
+netdata  
+- 웹 서버 모니터링
+- CPU 사용량 / 메모리 / Disk I/O / 네트워크
+
+nginx stub_status 활성화  
+<img width="400" height="156" alt="image" src="https://github.com/user-attachments/assets/38f2cc0a-8c3b-4897-908c-2f00bf187404" />
+
+일반 페이지 부하  
+- ab -n 2000 -c 50
+
+이미지 접근 부하  
+- ab -t 30 -c 50 이미지주소 &
+
+
+12주차
+
+<img width="483" height="297" alt="image" src="https://github.com/user-attachments/assets/2ef92faa-6edb-4362-854a-328479e524cf" />
+
+listen 80   
+- http
+
+return 301  
+- 해당 주소로 보냄
+  
+listen 443  
+- https
+
+<img width="509" height="361" alt="image" src="https://github.com/user-attachments/assets/8065ae5c-c788-45d6-b1f6-7d31a52a1ec7" />
+
+443 포트 추가  
+- ports 안 - "8443:443"
+
+인증서 마운트 추가  
+- volumes 안 - ./nginx/certs:/etc/nginx/certs:ro
+
+http -> https 리다이렉트  
+- curl -I http주소
+
+TLS 1.2 차단 확인  
+- openssl s_client -connect localhost:8443 -tls1_2 2>/dev/null | grep "handshake"
+
+TLS 1.3 동작 및 차단 검증  
+- openssl s_client -connect localhost:8443 -tls1_3 2>/dev/null | grep "Protocol“
+
+협상된 암호 스위트 확인  
+- openssl s_client -connect localhost:8443 -tls1_3 2>/dev/null | grep "Cipher"
+
+lynis
+- 시스템 감사
+
+전체 시스템 감사  
+- lynis audit system
+
+warning 취약점  
+- grep "^warning" /var/log/lynis-report.dat
+
+suggestion 취약점  
+- grep "^suggestion" /var/log/lynis-report.dat | head -10
+
+
