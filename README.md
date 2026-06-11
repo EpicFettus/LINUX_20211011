@@ -197,4 +197,14 @@ warning 취약점
 suggestion 취약점  
 - grep "^suggestion" /var/log/lynis-report.dat | head -10
 
+trivy  
+- 컨테이너 이미지 취약점 스캔
 
+스캔 (nginx:alpine 이미지)  
+- trivy image nginx:alpine
+
+
+13주차
+
+
+- 
