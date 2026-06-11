@@ -206,5 +206,34 @@ trivy
 
 13주차
 
+restic  
+- 컨테이너 백업 표준
 
-- 
+저장소 초기화  
+- restic init --repo 저장할경로
+
+볼륨 내부 정보  
+- docker volume inspect 볼륨
+
+볼륨 내 파일 및 용량  
+- ls -lh 볼륨경로
+- du -sh 볼륨경로
+
+restic 기본 스냅샷 백업  
+- restic -r 저장할경로 backup 백업할경로 --tag 태그명 --tag 태그명
+
+스냅샷 목록 및 저장소 용량 확인  
+- restic -r 저장경로 snapshots
+- restic -r 저장경로 stats
+
+DB 덤프  
+- docker exec 컨테이너 mysqldump --no-tablespaces -u [DB 사용자명] -p[DB 비밀번호] [대상 데이터베이스명] | gzip > [백업 압축 파일이 저장될 전체 경로 및 파일명]
+
+Restic으로 덤프 파일 백업  
+- restic -r 저장경로 backup db덤프경로 --tag 태그명 --tag 태그명
+
+스냅샷 복구  
+- restic -r 저장경로 restore 스냅샷ID --target 목적지
+
+DB 복구  
+- gunzip –c db백업.gz | docker exec –i db컨테이너 mysql –u 계정명 -p비밀번호 db명
